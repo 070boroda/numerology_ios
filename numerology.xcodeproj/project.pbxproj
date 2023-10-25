@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8D8FE5D2AE99A0000475B20 /* numerologyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8FE5C2AE99A0000475B20 /* numerologyApp.swift */; };
+		A8D8FE5F2AE99A0000475B20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8FE5E2AE99A0000475B20 /* ContentView.swift */; };
+		A8D8FE612AE99A0200475B20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D8FE602AE99A0200475B20 /* Assets.xcassets */; };
+		A8D8FE642AE99A0200475B20 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D8FE632AE99A0200475B20 /* Preview Assets.xcassets */; };
+		A8D8FE6E2AE99A0300475B20 /* numerologyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8FE6D2AE99A0300475B20 /* numerologyTests.swift */; };
+		A8D8FE782AE99A0300475B20 /* numerologyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8FE772AE99A0300475B20 /* numerologyUITests.swift */; };
+		A8D8FE7A2AE99A0300475B20 /* numerologyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8FE792AE99A0300475B20 /* numerologyUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8D8FE6A2AE99A0300475B20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8D8FE512AE99A0000475B20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8D8FE582AE99A0000475B20;
+			remoteInfo = numerology;
+		};
+		A8D8FE742AE99A0300475B20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8D8FE512AE99A0000475B20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8D8FE582AE99A0000475B20;
+			remoteInfo = numerology;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A8D8FE592AE99A0000475B20 /* numerology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = numerology.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8D8FE5C2AE99A0000475B20 /* numerologyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numerologyApp.swift; sourceTree = "<group>"; };
+		A8D8FE5E2AE99A0000475B20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A8D8FE602AE99A0200475B20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8D8FE632AE99A0200475B20 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A8D8FE692AE99A0300475B20 /* numerologyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = numerologyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8D8FE6D2AE99A0300475B20 /* numerologyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numerologyTests.swift; sourceTree = "<group>"; };
+		A8D8FE732AE99A0300475B20 /* numerologyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = numerologyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8D8FE772AE99A0300475B20 /* numerologyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numerologyUITests.swift; sourceTree = "<group>"; };
+		A8D8FE792AE99A0300475B20 /* numerologyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numerologyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8D8FE562AE99A0000475B20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8D8FE662AE99A0300475B20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8D8FE702AE99A0300475B20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8D8FE502AE99A0000475B20 = {
+			isa = PBXGroup;
+			children = (
+				A8D8FE5B2AE99A0000475B20 /* numerology */,
+				A8D8FE6C2AE99A0300475B20 /* numerologyTests */,
+				A8D8FE762AE99A0300475B20 /* numerologyUITests */,
+				A8D8FE5A2AE99A0000475B20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8D8FE5A2AE99A0000475B20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8D8FE592AE99A0000475B20 /* numerology.app */,
+				A8D8FE692AE99A0300475B20 /* numerologyTests.xctest */,
+				A8D8FE732AE99A0300475B20 /* numerologyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8D8FE5B2AE99A0000475B20 /* numerology */ = {
+			isa = PBXGroup;
+			children = (
+				A8D8FE5C2AE99A0000475B20 /* numerologyApp.swift */,
+				A8D8FE5E2AE99A0000475B20 /* ContentView.swift */,
+				A8D8FE602AE99A0200475B20 /* Assets.xcassets */,
+				A8D8FE622AE99A0200475B20 /* Preview Content */,
+			);
+			path = numerology;
+			sourceTree = "<group>";
+		};
+		A8D8FE622AE99A0200475B20 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A8D8FE632AE99A0200475B20 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A8D8FE6C2AE99A0300475B20 /* numerologyTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8D8FE6D2AE99A0300475B20 /* numerologyTests.swift */,
+			);
+			path = numerologyTests;
+			sourceTree = "<group>";
+		};
+		A8D8FE762AE99A0300475B20 /* numerologyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A8D8FE772AE99A0300475B20 /* numerologyUITests.swift */,
+				A8D8FE792AE99A0300475B20 /* numerologyUITestsLaunchTests.swift */,
+			);
+			path = numerologyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8D8FE582AE99A0000475B20 /* numerology */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8D8FE7D2AE99A0300475B20 /* Build configuration list for PBXNativeTarget "numerology" */;
+			buildPhases = (
+				A8D8FE552AE99A0000475B20 /* Sources */,
+				A8D8FE562AE99A0000475B20 /* Frameworks */,
+				A8D8FE572AE99A0000475B20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = numerology;
+			productName = numerology;
+			productReference = A8D8FE592AE99A0000475B20 /* numerology.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A8D8FE682AE99A0300475B20 /* numerologyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8D8FE802AE99A0300475B20 /* Build configuration list for PBXNativeTarget "numerologyTests" */;
+			buildPhases = (
+				A8D8FE652AE99A0300475B20 /* Sources */,
+				A8D8FE662AE99A0300475B20 /* Frameworks */,
+				A8D8FE672AE99A0300475B20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8D8FE6B2AE99A0300475B20 /* PBXTargetDependency */,
+			);
+			name = numerologyTests;
+			productName = numerologyTests;
+			productReference = A8D8FE692AE99A0300475B20 /* numerologyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A8D8FE722AE99A0300475B20 /* numerologyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8D8FE832AE99A0300475B20 /* Build configuration list for PBXNativeTarget "numerologyUITests" */;
+			buildPhases = (
+				A8D8FE6F2AE99A0300475B20 /* Sources */,
+				A8D8FE702AE99A0300475B20 /* Frameworks */,
+				A8D8FE712AE99A0300475B20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8D8FE752AE99A0300475B20 /* PBXTargetDependency */,
+			);
+			name = numerologyUITests;
+			productName = numerologyUITests;
+			productReference = A8D8FE732AE99A0300475B20 /* numerologyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8D8FE512AE99A0000475B20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A8D8FE582AE99A0000475B20 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					A8D8FE682AE99A0300475B20 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = A8D8FE582AE99A0000475B20;
+					};
+					A8D8FE722AE99A0300475B20 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = A8D8FE582AE99A0000475B20;
+					};
+				};
+			};
+			buildConfigurationList = A8D8FE542AE99A0000475B20 /* Build configuration list for PBXProject "numerology" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8D8FE502AE99A0000475B20;
+			productRefGroup = A8D8FE5A2AE99A0000475B20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8D8FE582AE99A0000475B20 /* numerology */,
+				A8D8FE682AE99A0300475B20 /* numerologyTests */,
+				A8D8FE722AE99A0300475B20 /* numerologyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8D8FE572AE99A0000475B20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D8FE642AE99A0200475B20 /* Preview Assets.xcassets in Resources */,
+				A8D8FE612AE99A0200475B20 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8D8FE672AE99A0300475B20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8D8FE712AE99A0300475B20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8D8FE552AE99A0000475B20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D8FE5F2AE99A0000475B20 /* ContentView.swift in Sources */,
+				A8D8FE5D2AE99A0000475B20 /* numerologyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8D8FE652AE99A0300475B20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D8FE6E2AE99A0300475B20 /* numerologyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8D8FE6F2AE99A0300475B20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D8FE782AE99A0300475B20 /* numerologyUITests.swift in Sources */,
+				A8D8FE7A2AE99A0300475B20 /* numerologyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8D8FE6B2AE99A0300475B20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8D8FE582AE99A0000475B20 /* numerology */;
+			targetProxy = A8D8FE6A2AE99A0300475B20 /* PBXContainerItemProxy */;
+		};
+		A8D8FE752AE99A0300475B20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8D8FE582AE99A0000475B20 /* numerology */;
+			targetProxy = A8D8FE742AE99A0300475B20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A8D8FE7B2AE99A0300475B20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A8D8FE7C2AE99A0300475B20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8D8FE7E2AE99A0300475B20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"numerology/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = by.zeliankoaliaksandr.numerology;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8D8FE7F2AE99A0300475B20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"numerology/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = by.zeliankoaliaksandr.numerology;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A8D8FE812AE99A0300475B20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = by.zeliankoaliaksandr.numerologyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/numerology.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/numerology";
+			};
+			name = Debug;
+		};
+		A8D8FE822AE99A0300475B20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = by.zeliankoaliaksandr.numerologyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/numerology.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/numerology";
+			};
+			name = Release;
+		};
+		A8D8FE842AE99A0300475B20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = by.zeliankoaliaksandr.numerologyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = numerology;
+			};
+			name = Debug;
+		};
+		A8D8FE852AE99A0300475B20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = by.zeliankoaliaksandr.numerologyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = numerology;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8D8FE542AE99A0000475B20 /* Build configuration list for PBXProject "numerology" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8D8FE7B2AE99A0300475B20 /* Debug */,
+				A8D8FE7C2AE99A0300475B20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8D8FE7D2AE99A0300475B20 /* Build configuration list for PBXNativeTarget "numerology" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8D8FE7E2AE99A0300475B20 /* Debug */,
+				A8D8FE7F2AE99A0300475B20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8D8FE802AE99A0300475B20 /* Build configuration list for PBXNativeTarget "numerologyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8D8FE812AE99A0300475B20 /* Debug */,
+				A8D8FE822AE99A0300475B20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8D8FE832AE99A0300475B20 /* Build configuration list for PBXNativeTarget "numerologyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8D8FE842AE99A0300475B20 /* Debug */,
+				A8D8FE852AE99A0300475B20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8D8FE512AE99A0000475B20 /* Project object */;
+}
