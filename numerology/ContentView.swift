@@ -21,7 +21,7 @@ struct ContentView: View {
                 }
                 .frame(width: screen.width/2.1,
                        height: screen.width/5)
-                    .background(Color.cyan.opacity(0.63))
+                    .background(Color.cyan.opacity(1))
                     .cornerRadius(12)
                 
                 VStack{
@@ -34,7 +34,7 @@ struct ContentView: View {
                 }
                 .frame(width: screen.width/4.4,
                            height: screen.width/5)
-                    .background(Color.cyan.opacity(0.63))
+                    .background(Color.cyan.opacity(1))
                     .cornerRadius(12)
             
             VStack{
@@ -47,64 +47,27 @@ struct ContentView: View {
             }
             .frame(width: screen.width/4.4,
                        height: screen.width/5)
-                .background(Color.cyan.opacity(0.63))
+                .background(Color.cyan.opacity(1))
                 .cornerRadius(12)
         }
             
-            
-            HStack(spacing: 8) {
-                VStack{
-                    Text("Характер")
-                        .font(.custom("AvenirNext-Bold", size: 12))
-                        .foregroundColor(.white)
-                    Text("15")
-                        .font(.custom("AvenirNext-Bold", size: 18))
-                        .foregroundColor(.white)
-                }
-                .frame(width: screen.width/4.4,
-                           height: screen.width/5)
-                    .background(Color.cyan.opacity(0.63))
-                    .cornerRadius(12)
-                
-                VStack{
-                    Text("Здоровье")
-                        .font(.custom("AvenirNext-Bold", size: 12))
-                        .foregroundColor(.white)
-                    Text("8")
-                        .font(.custom("AvenirNext-Bold", size: 18))
-                        .foregroundColor(.white)
-                }
-                .frame(width: screen.width/4.4,
-                           height: screen.width/5)
-                    .background(Color.cyan.opacity(0.63))
-                    .cornerRadius(12)
-            
-            VStack{
-                Text("Удача")
-                    .font(.custom("AvenirNext-Bold", size: 12))
-                    .foregroundColor(.white)
-                Text("18")
-                    .font(.custom("AvenirNext-Bold", size: 18))
-                    .foregroundColor(.white)
-            }
-            .frame(width: screen.width/4.4,
-                       height: screen.width/5)
-                .background(Color.cyan.opacity(0.63))
-                .cornerRadius(12)
-                
-                VStack{
-                    Text("Цель")
-                        .font(.custom("AvenirNext-Bold", size: 12))
-                        .foregroundColor(.white)
-                    Text("18")
-                        .font(.custom("AvenirNext-Bold", size: 18))
-                        .foregroundColor(.white)
-                }
-                .frame(width: screen.width/4.4,
-                           height: screen.width/5)
-                    .background(Color.cyan.opacity(0.63))
-                    .cornerRadius(12)
-        }
+
+            SimpleRow(firstText: "Характер",
+                      secondText: "Здоровье",
+                      thirtText: "Удача",
+                      fourthText: "Цель")
+            SimpleRow(
+                          firstText: "Энергия",
+                          secondText: "Логика",
+                          thirtText: "Долг",
+                          fourthText: "Семья")
+            SimpleRow(
+                          firstText: "Интерес",
+                          secondText: "Труд",
+                          thirtText: "Память",
+                          fourthText: "Привычки")
+            LastRow(secondText:"Быт")
+            Calendar()
             
         }.frame(
             minWidth: 0,
@@ -116,12 +79,164 @@ struct ContentView: View {
             startPoint: .topLeading,
             endPoint: .bottomTrailing
         ))
-        
-        
-        
     }
 }
 
-#Preview {
-    ContentView()
+
+struct SimpleRow: View {
+    
+     var firstText = ""
+     var secondText = ""
+     var thirtText = ""
+     var fourthText = ""
+    
+    var body: some View {
+        HStack() {
+            VStack{
+                Text(firstText)
+                    .font(.custom("AvenirNext-Bold", size: 12))
+                    .foregroundColor(.white)
+                Text("15")
+                    .font(.custom("AvenirNext-Bold", size: 18))
+                    .foregroundColor(.white)
+            }
+            .frame(width: screen.width/4.4,
+                   height: screen.width/5)
+            .background(Color.cyan.opacity(0.63))
+            .cornerRadius(12)
+            
+            VStack{
+                Text(secondText)
+                    .font(.custom("AvenirNext-Bold", size: 12))
+                    .foregroundColor(.white)
+                Text("8")
+                    .font(.custom("AvenirNext-Bold", size: 18))
+                    .foregroundColor(.white)
+            }
+            .frame(width: screen.width/4.4,
+                   height: screen.width/5)
+            .background(Color.cyan.opacity(0.63))
+            .cornerRadius(12)
+            
+            VStack{
+                Text(thirtText)
+                    .font(.custom("AvenirNext-Bold", size: 12))
+                    .foregroundColor(.white)
+                Text("12")
+                    .font(.custom("AvenirNext-Bold", size: 18))
+                    .foregroundColor(.white)
+            }
+            .frame(width: screen.width/4.4,
+                   height: screen.width/5)
+            .background(Color.cyan.opacity(0.63))
+            .cornerRadius(12)
+            
+            VStack{
+                Text(fourthText)
+                    .font(.custom("AvenirNext-Bold", size: 12))
+                    .foregroundColor(.white)
+                Text("18")
+                    .font(.custom("AvenirNext-Bold", size: 18))
+                    .foregroundColor(.white)
+            }
+            .frame(width: screen.width/4.4,
+                   height: screen.width/5)
+            .background(Color.cyan.opacity(1))
+            .cornerRadius(12)
+        }
+    }
 }
+
+struct LastRow: View {
+    
+     var secondText = ""
+    
+    var body: some View {
+        HStack() {
+            VStack{
+                Text("")
+                    .font(.custom("AvenirNext-Bold", size: 12))
+                    .foregroundColor(.white)
+                Text("")
+                    .font(.custom("AvenirNext-Bold", size: 18))
+                    .foregroundColor(.white)
+            }
+            .frame(width: screen.width/4.4,
+                   height: screen.width/5)
+            .background(Color.cyan.opacity(0))
+            .cornerRadius(12)
+            
+            VStack{
+                Text(secondText)
+                    .font(.custom("AvenirNext-Bold", size: 12))
+                    .foregroundColor(.white)
+                Text("8")
+                    .font(.custom("AvenirNext-Bold", size: 18))
+                    .foregroundColor(.white)
+            }
+            .frame(width: screen.width/4.4,
+                   height: screen.width/5)
+            .background(Color.cyan.opacity(0.63))
+            .cornerRadius(12)
+            
+            VStack{
+                Text("")
+                    .font(.custom("AvenirNext-Bold", size: 12))
+                    .foregroundColor(.white)
+                Text("")
+                    .font(.custom("AvenirNext-Bold", size: 18))
+                    .foregroundColor(.white)
+            }
+            .frame(width: screen.width/4.4,
+                   height: screen.width/5)
+            .background(Color.cyan.opacity(0))
+            .cornerRadius(12)
+            
+            VStack{
+                Text("")
+                    .font(.custom("AvenirNext-Bold", size: 12))
+                    .foregroundColor(.white)
+                Text("")
+                    .font(.custom("AvenirNext-Bold", size: 18))
+                    .foregroundColor(.white)
+            }
+            .frame(width: screen.width/4.4,
+                   height: screen.width/5)
+            .background(Color.cyan.opacity(0))
+            .cornerRadius(12)
+        }
+    }
+}
+
+struct Calendar: View {
+    @State var selectedDate = Date()
+
+  var body: some View {
+      
+      VStack{
+          Spacer()
+          Text("Введите дату рождения")
+              .font(.custom("AvenirNext-Bold", size: 24))
+              .foregroundColor(.white)
+          DatePicker("",
+                     selection: $selectedDate,
+                     displayedComponents: .date)
+          .datePickerStyle(.compact)
+          .labelsHidden()
+          .background(Color.orange.opacity(0))
+          .accentColor(.orange)
+          .frame(height: screen.width/6)
+        //  .font(Font.system(size: 75, design: .default))
+          .colorMultiply(.white)
+          .colorInvert()
+          
+      }
+          
+    }
+}
+    
+
+    #Preview {
+        ContentView()
+    }
+
