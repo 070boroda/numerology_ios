@@ -14,6 +14,7 @@
 		A8D8FE6E2AE99A0300475B20 /* numerologyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8FE6D2AE99A0300475B20 /* numerologyTests.swift */; };
 		A8D8FE782AE99A0300475B20 /* numerologyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8FE772AE99A0300475B20 /* numerologyUITests.swift */; };
 		A8D8FE7A2AE99A0300475B20 /* numerologyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8FE792AE99A0300475B20 /* numerologyUITestsLaunchTests.swift */; };
+		A8FFB59F2AE9B4BB007C491C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A8FFB59E2AE9B4BB007C491C /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		A8D8FE732AE99A0300475B20 /* numerologyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = numerologyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D8FE772AE99A0300475B20 /* numerologyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numerologyUITests.swift; sourceTree = "<group>"; };
 		A8D8FE792AE99A0300475B20 /* numerologyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numerologyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A8FFB59E2AE9B4BB007C491C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		A8D8FE502AE99A0000475B20 = {
 			isa = PBXGroup;
 			children = (
+				A8FFB59E2AE9B4BB007C491C /* .gitignore */,
 				A8D8FE5B2AE99A0000475B20 /* numerology */,
 				A8D8FE6C2AE99A0300475B20 /* numerologyTests */,
 				A8D8FE762AE99A0300475B20 /* numerologyUITests */,
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8D8FE642AE99A0200475B20 /* Preview Assets.xcassets in Resources */,
+				A8FFB59F2AE9B4BB007C491C /* .gitignore in Resources */,
 				A8D8FE612AE99A0200475B20 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,8 +431,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,8 +458,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
