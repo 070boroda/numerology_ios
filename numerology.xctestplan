@@ -1,0 +1,46 @@
+{
+  "configurations" : [
+    {
+      "id" : "4FF67320-674C-4237-AEFA-2EACC06948BB",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:numerology.xcodeproj",
+      "identifier" : "A8D8FE582AE99A0000475B20",
+      "name" : "numerology"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:numerology.xcodeproj",
+        "identifier" : "A8D8FE682AE99A0300475B20",
+        "name" : "numerologyTests"
+      }
+    },
+    {
+      "enabled" : false,
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:numerology.xcodeproj",
+        "identifier" : "A8D8FE722AE99A0300475B20",
+        "name" : "numerologyUITests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:numerology.xcodeproj",
+        "identifier" : "A837D28F2AECD331003312E4",
+        "name" : "numerologyTestsCounter"
+      }
+    }
+  ],
+  "version" : 1
+}

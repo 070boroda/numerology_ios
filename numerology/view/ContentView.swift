@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var selectedTab: Tab = .tablecells
+    
+    init(){
+        UITabBar.appearance().isHidden = true
+    }
+    
     var body: some View {
-        VStack{
+        VStack(){
             HStack(spacing: 8) {
                 VStack{
                     Text("Доп.числа")
@@ -67,7 +74,10 @@ struct ContentView: View {
                           thirtText: "Память",
                           fourthText: "Привычки")
             LastRow(secondText:"Быт")
+                .padding(.bottom, 40)
             Calendar()
+                .padding(.bottom, 150)
+           // NavigationBar(selectedTab: $selectedTab)
             
         }.frame(
             minWidth: 0,
@@ -214,7 +224,6 @@ struct Calendar: View {
   var body: some View {
       
       VStack{
-          Spacer()
           Text("Введите дату рождения")
               .font(.custom("AvenirNext-Bold", size: 24))
               .foregroundColor(.white)

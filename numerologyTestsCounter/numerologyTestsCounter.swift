@@ -1,14 +1,13 @@
 //
-//  numerologyTests.swift
-//  numerologyTests
+//  numerologyTestsCounter.swift
+//  numerologyTestsCounter
 //
-//  Created by Alexandr on 25.10.23.
+//  Created by Alexandr on 28.10.23.
 //
 
 import XCTest
-@testable import numerology
 
-final class numerologyTests: XCTestCase {
+final class numerologyTestsCounter: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -28,7 +27,7 @@ final class numerologyTests: XCTestCase {
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }
