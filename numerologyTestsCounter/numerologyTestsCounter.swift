@@ -6,30 +6,63 @@
 //
 
 import XCTest
+@testable import numerology
 
 final class numerologyTestsCounter: XCTestCase {
+    
+    var counter: CounterViewModel!
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+       try super.setUpWithError()
+        
+        counter = CounterViewModel()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        counter = nil
+        try super.tearDownWithError()
     }
 
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+       
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd "
+        let date = formatter.date(from: "1984/06/14")
+        
+//        let table = Table(
+//                dopChisla: "33,6,31,4",
+//                sudba: "----",
+//                temperament: "----",
+//                harakter: "----",
+//                zdorovie: "----",
+//                udacha: "----",
+//                cell: "----",
+//                energy: "----",
+//                logic: "----",
+//                dolg:"----",
+//                semiya: "----",
+//                interes: "----",
+//                trud: "----",
+//                pamyat:"----",
+//                privichki: "----",
+//                bit: "----"
+//            )
+    
+//        XCTAssertEqual(counter.countTable(selectedDate: date!).dopChisla, "33,6,31,4")
+//        XCTAssertEqual(counter.countTable(selectedDate: date!).harakter, "111")
+//        XCTAssertEqual(counter.countTable(selectedDate: date!).zdorovie, "444")
+//        XCTAssertEqual(counter.countTable(selectedDate: date!).udacha, "----")
+//        XCTAssertEqual(counter.countTable(selectedDate: date!).energy, "----")
+//        XCTAssertEqual(counter.countTable(selectedDate: date!).logic, "----")
+//        XCTAssertEqual(counter.countTable(selectedDate: date!).dolg, "8")
+//        XCTAssertEqual(counter.countTable(selectedDate: date!).interes, "333")
+//        XCTAssertEqual(counter.countTable(selectedDate: date!).trud, "66")
+//        XCTAssertEqual(counter.countTable(selectedDate: date!).pamyat, "9")
+//        XCTAssertEqual(counter.countTable(selectedDate: date!).sudba, "6")
+//        XCTAssertEqual(counter.countTable(selectedDate: date!).temperament, "3")
+//        XCTAssertEqual(counter.countTable(selectedDate: date!).cell, "6")
+//        XCTAssertEqual(counter.countTable(selectedDate: date!).semiya, "1")
+//        XCTAssertEqual(counter.countTable(selectedDate: date!).privichki, "6")
+//        XCTAssertEqual(counter.countTable(selectedDate: date!).bit, "5")
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
