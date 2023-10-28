@@ -10,15 +10,20 @@ import SwiftUI
 struct AppView: View {
     
     @State var selectedTab = "Расчет"
+    
     let tabs = ["Расчет", "Совместимость", "Значение показателей"]
+    let counterViewModel: CounterViewModel
     
     init() {
         UITabBar.appearance().isHidden = true
+        counterViewModel = CounterViewModel()
     }
     var body: some View {
         ZStack(alignment: .bottom){
             TabView(selection: $selectedTab){
-                ContentView().tag("Расчет")
+                ContentView(counterViewModel:
+                            counterViewModel)
+                .tag("Расчет")
                 CompobilitiView().tag("Совместимость")
                 Text("Значение показателей").tag("Значение показателей")
             }

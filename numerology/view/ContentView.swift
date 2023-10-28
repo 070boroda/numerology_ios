@@ -10,10 +10,8 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var selectedTab: Tab = .tablecells
-    
-    init(){
-        UITabBar.appearance().isHidden = true
-    }
+    @StateObject var counterViewModel: CounterViewModel
+
     
     var body: some View {
         VStack(){
@@ -22,7 +20,7 @@ struct ContentView: View {
                     Text("Доп.числа")
                         .font(.custom("AvenirNext-Bold", size: 12))
                         .foregroundColor(.white)
-                    Text("15,6,11,2")
+                    Text(counterViewModel.table.dopChisla)
                         .font(.custom("AvenirNext-Bold", size: 18))
                         .foregroundColor(.white)
                 }
@@ -35,7 +33,7 @@ struct ContentView: View {
                     Text("Число судьбы")
                         .font(.custom("AvenirNext-Bold", size: 12))
                         .foregroundColor(.white)
-                    Text("8")
+                    Text(counterViewModel.table.sudba)
                         .font(.custom("AvenirNext-Bold", size: 18))
                         .foregroundColor(.white)
                 }
@@ -48,7 +46,7 @@ struct ContentView: View {
                 Text("Темперамент")
                     .font(.custom("AvenirNext-Bold", size: 12))
                     .foregroundColor(.white)
-                Text("18")
+                Text(counterViewModel.table.temperament)
                     .font(.custom("AvenirNext-Bold", size: 18))
                     .foregroundColor(.white)
             }
@@ -62,22 +60,33 @@ struct ContentView: View {
             SimpleRow(firstText: "Характер",
                       secondText: "Здоровье",
                       thirtText: "Удача",
-                      fourthText: "Цель")
+                      fourthText: "Цель",
+                      firstContentText: counterViewModel.table.harakter,
+                      secondContentText: counterViewModel.table.zdorovie,
+                      thirtContentText: counterViewModel.table.udacha,
+                      fourthContentText: counterViewModel.table.cell)
             SimpleRow(
                           firstText: "Энергия",
                           secondText: "Логика",
                           thirtText: "Долг",
-                          fourthText: "Семья")
+                          fourthText: "Семья",
+                          firstContentText: counterViewModel.table.energy,
+                          secondContentText: counterViewModel.table.logic,
+                          thirtContentText: counterViewModel.table.dolg,
+                          fourthContentText: counterViewModel.table.semiya)
             SimpleRow(
                           firstText: "Интерес",
                           secondText: "Труд",
                           thirtText: "Память",
-                          fourthText: "Привычки")
-            LastRow(secondText:"Быт")
+                          fourthText: "Привычки",
+                          firstContentText: counterViewModel.table.interes,
+                          secondContentText: counterViewModel.table.trud,
+                          thirtContentText: counterViewModel.table.pamyat,
+                          fourthContentText: counterViewModel.table.privichki)
+            LastRow(secondText:"Быт", secondContentText: counterViewModel.table.bit)
                 .padding(.bottom, 40)
-            Calendar()
+            Calendar(counterViewModel: counterViewModel)
                 .padding(.bottom, 150)
-           // NavigationBar(selectedTab: $selectedTab)
             
         }.frame(
             minWidth: 0,
@@ -100,13 +109,18 @@ struct SimpleRow: View {
      var thirtText = ""
      var fourthText = ""
     
+    var firstContentText = ""
+    var secondContentText = ""
+    var thirtContentText = ""
+    var fourthContentText = ""
+    
     var body: some View {
         HStack() {
             VStack{
                 Text(firstText)
                     .font(.custom("AvenirNext-Bold", size: 12))
                     .foregroundColor(.white)
-                Text("15")
+                Text(firstContentText)
                     .font(.custom("AvenirNext-Bold", size: 18))
                     .foregroundColor(.white)
             }
@@ -119,7 +133,7 @@ struct SimpleRow: View {
                 Text(secondText)
                     .font(.custom("AvenirNext-Bold", size: 12))
                     .foregroundColor(.white)
-                Text("8")
+                Text(secondContentText)
                     .font(.custom("AvenirNext-Bold", size: 18))
                     .foregroundColor(.white)
             }
@@ -132,7 +146,7 @@ struct SimpleRow: View {
                 Text(thirtText)
                     .font(.custom("AvenirNext-Bold", size: 12))
                     .foregroundColor(.white)
-                Text("12")
+                Text(thirtContentText)
                     .font(.custom("AvenirNext-Bold", size: 18))
                     .foregroundColor(.white)
             }
@@ -145,7 +159,7 @@ struct SimpleRow: View {
                 Text(fourthText)
                     .font(.custom("AvenirNext-Bold", size: 12))
                     .foregroundColor(.white)
-                Text("18")
+                Text(fourthContentText)
                     .font(.custom("AvenirNext-Bold", size: 18))
                     .foregroundColor(.white)
             }
@@ -160,6 +174,7 @@ struct SimpleRow: View {
 struct LastRow: View {
     
      var secondText = ""
+    var secondContentText = ""
     
     var body: some View {
         HStack() {
@@ -180,7 +195,7 @@ struct LastRow: View {
                 Text(secondText)
                     .font(.custom("AvenirNext-Bold", size: 12))
                     .foregroundColor(.white)
-                Text("8")
+                Text(secondContentText)
                     .font(.custom("AvenirNext-Bold", size: 18))
                     .foregroundColor(.white)
             }
@@ -219,33 +234,30 @@ struct LastRow: View {
 }
 
 struct Calendar: View {
-    @State var selectedDate = Date()
-
-  var body: some View {
-      
-      VStack{
-          Text("Введите дату рождения")
-              .font(.custom("AvenirNext-Bold", size: 24))
-              .foregroundColor(.white)
-          DatePicker("",
-                     selection: $selectedDate,
-                     displayedComponents: .date)
-          .datePickerStyle(.compact)
-          .labelsHidden()
-          .background(Color.orange.opacity(0))
-          .accentColor(.orange)
-          .frame(height: screen.width/6)
-        //  .font(Font.system(size: 75, design: .default))
-          .colorMultiply(.white)
-          .colorInvert()
-          
-      }
-          
+    var counterViewModel: CounterViewModel
+    @State var selectedDate: Date = Date()
+    var body: some View {
+        VStack{
+            Text("Введите дату рождения")
+                .font(.custom("AvenirNext-Bold", size: 24))
+                .foregroundColor(.white)
+            DatePicker("",
+                       selection: Binding(get: {
+                self.selectedDate
+            }, set: { newVal in
+                self.selectedDate = newVal
+                counterViewModel.countTable(selectedDate: newVal)
+            }),
+                       displayedComponents: .date)
+            .datePickerStyle(.compact)
+            // .datePickerStyle(WheelDatePickerStyle())
+            .labelsHidden()
+            .background(Color.orange.opacity(0))
+            .accentColor(.orange)
+            .frame(height: screen.width/6)
+            .colorMultiply(.white)
+            .colorInvert()
+        }
     }
-}
     
-
-    #Preview {
-        ContentView()
-    }
-
+}
