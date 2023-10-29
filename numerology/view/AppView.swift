@@ -13,10 +13,14 @@ struct AppView: View {
     
     let tabs = ["Расчет", "Совместимость", "Значение показателей"]
     let counterViewModel: CounterViewModel
+    let counterCompotibilityOneViewModel: CounterViewModel
+    let counterCompotibilityTwoViewModel: CounterViewModel
     
     init() {
         UITabBar.appearance().isHidden = true
         counterViewModel = CounterViewModel()
+        counterCompotibilityOneViewModel = CounterViewModel()
+        counterCompotibilityTwoViewModel = CounterViewModel()
     }
     var body: some View {
         ZStack(alignment: .bottom){
@@ -24,7 +28,11 @@ struct AppView: View {
                 ContentView(counterViewModel:
                             counterViewModel)
                 .tag("Расчет")
-                CompobilitiView().tag("Совместимость")
+                CompatibilityView(counterOneViewModel: counterCompotibilityOneViewModel,
+                    counterTwoViewModel: counterCompotibilityTwoViewModel)
+                    .tag("Совместимость")
+                
+                
                 Text("Значение показателей").tag("Значение показателей")
             }
             
