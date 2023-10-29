@@ -66,7 +66,7 @@ class CounterViewModel: ObservableObject {
             secondDopChislo = String(firstDopChislo).compactMap{ $0.wholeNumberValue }.compactMap(Int.init).reduce(0, +)
 //        }
         
-        let thirdDopChislo = firstDopChislo - (2 * firstNumberOfDay)
+        let thirdDopChislo = abs(firstDopChislo - (2 * firstNumberOfDay))
         
         var fourthDopChislo: Int
 //        if (String(thirdDopChislo).count == 1) {
@@ -113,7 +113,7 @@ class CounterViewModel: ObservableObject {
             case 9:
                 nine += "9"
             default:
-                print("Privet")
+                print("Number not found in array by number" + String(number))
             }
         }
         
