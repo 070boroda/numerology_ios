@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A837D2932AECD331003312E4 /* numerologyTestsCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837D2922AECD331003312E4 /* numerologyTestsCounter.swift */; };
+		A837D29B2AEE3EE3003312E4 /* CompatibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837D29A2AEE3EE3003312E4 /* CompatibilityView.swift */; };
 		A8D8FE5D2AE99A0000475B20 /* numerologyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8FE5C2AE99A0000475B20 /* numerologyApp.swift */; };
 		A8D8FE5F2AE99A0000475B20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8FE5E2AE99A0000475B20 /* ContentView.swift */; };
 		A8D8FE612AE99A0200475B20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D8FE602AE99A0200475B20 /* Assets.xcassets */; };
@@ -15,7 +16,6 @@
 		A8FFB59F2AE9B4BB007C491C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A8FFB59E2AE9B4BB007C491C /* .gitignore */; };
 		A8FFB5A32AEAEBEB007C491C /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FFB5A22AEAEBEB007C491C /* NavigationBar.swift */; };
 		A8FFB5A52AEC3774007C491C /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FFB5A42AEC3773007C491C /* AppView.swift */; };
-		A8FFB5A72AEC4D12007C491C /* CompobilitiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FFB5A62AEC4D12007C491C /* CompobilitiView.swift */; };
 		A8FFB5AA2AEC565C007C491C /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FFB5A92AEC565C007C491C /* Table.swift */; };
 		A8FFB5AE2AEC5891007C491C /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FFB5AD2AEC5891007C491C /* CounterViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +34,7 @@
 		A837D2902AECD331003312E4 /* numerologyTestsCounter.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = numerologyTestsCounter.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A837D2922AECD331003312E4 /* numerologyTestsCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numerologyTestsCounter.swift; sourceTree = "<group>"; };
 		A837D2992AECD624003312E4 /* numerology.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = numerology.xctestplan; sourceTree = "<group>"; };
+		A837D29A2AEE3EE3003312E4 /* CompatibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompatibilityView.swift; sourceTree = "<group>"; };
 		A8D8FE592AE99A0000475B20 /* numerology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = numerology.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D8FE5C2AE99A0000475B20 /* numerologyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numerologyApp.swift; sourceTree = "<group>"; };
 		A8D8FE5E2AE99A0000475B20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		A8FFB59E2AE9B4BB007C491C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A8FFB5A22AEAEBEB007C491C /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		A8FFB5A42AEC3773007C491C /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
-		A8FFB5A62AEC4D12007C491C /* CompobilitiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompobilitiView.swift; sourceTree = "<group>"; };
 		A8FFB5A92AEC565C007C491C /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 		A8FFB5AD2AEC5891007C491C /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,8 +127,8 @@
 			children = (
 				A8D8FE5E2AE99A0000475B20 /* ContentView.swift */,
 				A8FFB5A22AEAEBEB007C491C /* NavigationBar.swift */,
-				A8FFB5A62AEC4D12007C491C /* CompobilitiView.swift */,
 				A8FFB5A42AEC3773007C491C /* AppView.swift */,
+				A837D29A2AEE3EE3003312E4 /* CompatibilityView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -251,12 +251,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8FFB5AA2AEC565C007C491C /* Table.swift in Sources */,
-				A8FFB5A72AEC4D12007C491C /* CompobilitiView.swift in Sources */,
 				A8FFB5AE2AEC5891007C491C /* CounterViewModel.swift in Sources */,
 				A8FFB5A52AEC3774007C491C /* AppView.swift in Sources */,
 				A8D8FE5F2AE99A0000475B20 /* ContentView.swift in Sources */,
 				A8D8FE5D2AE99A0000475B20 /* numerologyApp.swift in Sources */,
 				A8FFB5A32AEAEBEB007C491C /* NavigationBar.swift in Sources */,
+				A837D29B2AEE3EE3003312E4 /* CompatibilityView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var selectedTab: Tab = .tablecells
     @StateObject var counterViewModel: CounterViewModel
 
     
@@ -18,10 +17,10 @@ struct ContentView: View {
             HStack(spacing: 8) {
                 VStack{
                     Text("Доп.числа")
-                        .font(.custom("AvenirNext-Bold", size: 12))
+                        .font(.custom("AvenirNext-Bold", size: 10))
                         .foregroundColor(.white)
                     Text(counterViewModel.table.dopChisla)
-                        .font(.custom("AvenirNext-Bold", size: 18))
+                        .font(.custom("AvenirNext-Bold", size: 16))
                         .foregroundColor(.white)
                 }
                 .frame(width: screen.width/2.1,
@@ -31,10 +30,10 @@ struct ContentView: View {
                 
                 VStack{
                     Text("Число судьбы")
-                        .font(.custom("AvenirNext-Bold", size: 12))
+                        .font(.custom("AvenirNext-Bold", size: 10))
                         .foregroundColor(.white)
                     Text(counterViewModel.table.sudba)
-                        .font(.custom("AvenirNext-Bold", size: 18))
+                        .font(.custom("AvenirNext-Bold", size: 16))
                         .foregroundColor(.white)
                 }
                 .frame(width: screen.width/4.4,
@@ -44,10 +43,10 @@ struct ContentView: View {
             
             VStack{
                 Text("Темперамент")
-                    .font(.custom("AvenirNext-Bold", size: 12))
+                    .font(.custom("AvenirNext-Bold", size: 10))
                     .foregroundColor(.white)
                 Text(counterViewModel.table.temperament)
-                    .font(.custom("AvenirNext-Bold", size: 18))
+                    .font(.custom("AvenirNext-Bold", size: 16))
                     .foregroundColor(.white)
             }
             .frame(width: screen.width/4.4,
@@ -118,10 +117,10 @@ struct SimpleRow: View {
         HStack() {
             VStack{
                 Text(firstText)
-                    .font(.custom("AvenirNext-Bold", size: 12))
+                    .font(.custom("AvenirNext-Bold", size: 10))
                     .foregroundColor(.white)
                 Text(firstContentText)
-                    .font(.custom("AvenirNext-Bold", size: 18))
+                    .font(.custom("AvenirNext-Bold", size: 16))
                     .foregroundColor(.white)
             }
             .frame(width: screen.width/4.4,
@@ -131,10 +130,10 @@ struct SimpleRow: View {
             
             VStack{
                 Text(secondText)
-                    .font(.custom("AvenirNext-Bold", size: 12))
+                    .font(.custom("AvenirNext-Bold", size: 10))
                     .foregroundColor(.white)
                 Text(secondContentText)
-                    .font(.custom("AvenirNext-Bold", size: 18))
+                    .font(.custom("AvenirNext-Bold", size: 16))
                     .foregroundColor(.white)
             }
             .frame(width: screen.width/4.4,
@@ -144,10 +143,10 @@ struct SimpleRow: View {
             
             VStack{
                 Text(thirtText)
-                    .font(.custom("AvenirNext-Bold", size: 12))
+                    .font(.custom("AvenirNext-Bold", size: 10))
                     .foregroundColor(.white)
                 Text(thirtContentText)
-                    .font(.custom("AvenirNext-Bold", size: 18))
+                    .font(.custom("AvenirNext-Bold", size: 16))
                     .foregroundColor(.white)
             }
             .frame(width: screen.width/4.4,
@@ -157,10 +156,10 @@ struct SimpleRow: View {
             
             VStack{
                 Text(fourthText)
-                    .font(.custom("AvenirNext-Bold", size: 12))
+                    .font(.custom("AvenirNext-Bold", size: 10))
                     .foregroundColor(.white)
                 Text(fourthContentText)
-                    .font(.custom("AvenirNext-Bold", size: 18))
+                    .font(.custom("AvenirNext-Bold", size: 16))
                     .foregroundColor(.white)
             }
             .frame(width: screen.width/4.4,
@@ -180,10 +179,10 @@ struct LastRow: View {
         HStack() {
             VStack{
                 Text("")
-                    .font(.custom("AvenirNext-Bold", size: 12))
+                    .font(.custom("AvenirNext-Bold", size: 10))
                     .foregroundColor(.white)
                 Text("")
-                    .font(.custom("AvenirNext-Bold", size: 18))
+                    .font(.custom("AvenirNext-Bold", size: 16))
                     .foregroundColor(.white)
             }
             .frame(width: screen.width/4.4,
@@ -193,10 +192,10 @@ struct LastRow: View {
             
             VStack{
                 Text(secondText)
-                    .font(.custom("AvenirNext-Bold", size: 12))
+                    .font(.custom("AvenirNext-Bold", size: 10))
                     .foregroundColor(.white)
                 Text(secondContentText)
-                    .font(.custom("AvenirNext-Bold", size: 18))
+                    .font(.custom("AvenirNext-Bold", size: 16))
                     .foregroundColor(.white)
             }
             .frame(width: screen.width/4.4,
@@ -206,10 +205,10 @@ struct LastRow: View {
             
             VStack{
                 Text("")
-                    .font(.custom("AvenirNext-Bold", size: 12))
+                    .font(.custom("AvenirNext-Bold", size: 10))
                     .foregroundColor(.white)
                 Text("")
-                    .font(.custom("AvenirNext-Bold", size: 18))
+                    .font(.custom("AvenirNext-Bold", size: 16))
                     .foregroundColor(.white)
             }
             .frame(width: screen.width/4.4,
@@ -219,10 +218,10 @@ struct LastRow: View {
             
             VStack{
                 Text("")
-                    .font(.custom("AvenirNext-Bold", size: 12))
+                    .font(.custom("AvenirNext-Bold", size: 10))
                     .foregroundColor(.white)
                 Text("")
-                    .font(.custom("AvenirNext-Bold", size: 18))
+                    .font(.custom("AvenirNext-Bold", size: 16))
                     .foregroundColor(.white)
             }
             .frame(width: screen.width/4.4,
@@ -257,7 +256,7 @@ struct Calendar: View {
             .frame(height: screen.width/6)
             .colorMultiply(.white)
             .colorInvert()
+            .environment(\.locale, Locale.init(identifier: "ru"))
         }
     }
-    
 }

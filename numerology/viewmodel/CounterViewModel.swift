@@ -12,6 +12,8 @@ class CounterViewModel: ObservableObject {
     
     @Published var table: Table
     @Published var selectedDate: Date
+    
+    
     init(){
         self.table =
         Table(
