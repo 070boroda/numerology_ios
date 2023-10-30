@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TransformView: View {
     
-    var counterViewModel: TransformCounrterViewModel
+    @StateObject var counterViewModel: TransformCounrterViewModel
     
     var body: some View {
      
@@ -86,6 +86,9 @@ struct TransformView: View {
                 .padding(.bottom, 40)
 //            Calendar(counterViewModel: counterViewModel)
 //                .padding(.bottom, 150)
+            Text("Трансформация")
+                .font(.custom("AvenirNext-Bold", size: 24))
+                .foregroundColor(.white)
             Spacer()
         }.frame(
             minWidth: 0,

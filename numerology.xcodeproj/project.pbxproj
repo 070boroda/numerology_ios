@@ -11,6 +11,8 @@
 		A837D29B2AEE3EE3003312E4 /* CompatibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837D29A2AEE3EE3003312E4 /* CompatibilityView.swift */; };
 		A837D29D2AEEC4B9003312E4 /* TransformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837D29C2AEEC4B9003312E4 /* TransformView.swift */; };
 		A837D29F2AEEC5F3003312E4 /* TransformCounrterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837D29E2AEEC5F3003312E4 /* TransformCounrterViewModel.swift */; };
+		A837D2A12AF00227003312E4 /* DegradationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837D2A02AF00226003312E4 /* DegradationView.swift */; };
+		A837D2A32AF002DC003312E4 /* DegradationCounrterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837D2A22AF002DC003312E4 /* DegradationCounrterViewModel.swift */; };
 		A8D8FE5D2AE99A0000475B20 /* numerologyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8FE5C2AE99A0000475B20 /* numerologyApp.swift */; };
 		A8D8FE5F2AE99A0000475B20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8FE5E2AE99A0000475B20 /* ContentView.swift */; };
 		A8D8FE612AE99A0200475B20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D8FE602AE99A0200475B20 /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 		A837D29A2AEE3EE3003312E4 /* CompatibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompatibilityView.swift; sourceTree = "<group>"; };
 		A837D29C2AEEC4B9003312E4 /* TransformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformView.swift; sourceTree = "<group>"; };
 		A837D29E2AEEC5F3003312E4 /* TransformCounrterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformCounrterViewModel.swift; sourceTree = "<group>"; };
+		A837D2A02AF00226003312E4 /* DegradationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DegradationView.swift; sourceTree = "<group>"; };
+		A837D2A22AF002DC003312E4 /* DegradationCounrterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DegradationCounrterViewModel.swift; sourceTree = "<group>"; };
 		A8D8FE592AE99A0000475B20 /* numerology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = numerology.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D8FE5C2AE99A0000475B20 /* numerologyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numerologyApp.swift; sourceTree = "<group>"; };
 		A8D8FE5E2AE99A0000475B20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -134,6 +138,7 @@
 				A8FFB5A42AEC3773007C491C /* AppView.swift */,
 				A837D29A2AEE3EE3003312E4 /* CompatibilityView.swift */,
 				A837D29C2AEEC4B9003312E4 /* TransformView.swift */,
+				A837D2A02AF00226003312E4 /* DegradationView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 			children = (
 				A8FFB5AD2AEC5891007C491C /* CounterViewModel.swift */,
 				A837D29E2AEEC5F3003312E4 /* TransformCounrterViewModel.swift */,
+				A837D2A22AF002DC003312E4 /* DegradationCounrterViewModel.swift */,
 			);
 			path = viewmodel;
 			sourceTree = "<group>";
@@ -257,8 +263,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8FFB5AA2AEC565C007C491C /* Table.swift in Sources */,
+				A837D2A12AF00227003312E4 /* DegradationView.swift in Sources */,
 				A8FFB5AE2AEC5891007C491C /* CounterViewModel.swift in Sources */,
 				A8FFB5A52AEC3774007C491C /* AppView.swift in Sources */,
+				A837D2A32AF002DC003312E4 /* DegradationCounrterViewModel.swift in Sources */,
 				A8D8FE5F2AE99A0000475B20 /* ContentView.swift in Sources */,
 				A8D8FE5D2AE99A0000475B20 /* numerologyApp.swift in Sources */,
 				A837D29D2AEEC4B9003312E4 /* TransformView.swift in Sources */,

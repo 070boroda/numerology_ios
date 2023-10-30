@@ -112,7 +112,7 @@ class TransformCounrterViewModel: ObservableObject {
             case 9:
                 nine += "9"
             default:
-                print("Number not found in array by number" + String(number))
+               print()
             }
         }
         
