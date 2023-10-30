@@ -245,6 +245,7 @@ struct Calendar: View {
                 self.selectedDate
             }, set: { newVal in
                 self.selectedDate = newVal
+                counterViewModel.selectedDate = newVal
                 counterViewModel.countTable(selectedDate: newVal)
             }),
                        displayedComponents: .date)

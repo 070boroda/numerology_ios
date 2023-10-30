@@ -1,17 +1,16 @@
 //
-//  counterViewModel.swift
+//  TransformCounrterView.swift
 //  numerology
 //
-//  Created by Alexandr on 27.10.23.
+//  Created by Alexandr on 29.10.23.
 //
 
 import Foundation
 
-
-class CounterViewModel: ObservableObject {
+class TransformCounrterViewModel: ObservableObject {
     
     @Published var table: Table
-    @Published var selectedDate: Date
+   // var selectedDate: Date
     
     
     init(){
@@ -34,7 +33,7 @@ class CounterViewModel: ObservableObject {
           privichki: "----",
           bit: "----"
         )
-        self.selectedDate = Date()
+        //self.selectedDate = Date()
         
     }
 
@@ -113,7 +112,7 @@ class CounterViewModel: ObservableObject {
             case 9:
                 nine += "9"
             default:
-                print()
+               print()
             }
         }
         
@@ -136,6 +135,31 @@ class CounterViewModel: ObservableObject {
         
         dopChislo = String(firstDopChislo) + "," + String(secondDopChislo) + "," + String(thirdDopChislo) + "," + String(fourthDopChislo)
         
+        if (one.count > 2) {
+            if (one.count % 2 == 0) {
+                //Кол-во весмерок для добавления
+                let countEight = (one.count - 2) / 2
+                
+                for _ in 0..<countEight {
+                        eight += "8"
+                    }
+                one = "11"
+            } else {
+                //Кол-во весмерок для добавления
+                let countEight = (one.count - 1) / 2
+                for _ in 0..<countEight {
+                        eight += "8"
+                    }
+                one = "1"
+            }
+        }
+        
+        for _ in 0..<six.count {
+                seven += "7"
+            }
+        
+        six = ""
+        
         self.table = Table(
             dopChisla: dopChislo,
             sudba: String(sudba),
@@ -150,29 +174,9 @@ class CounterViewModel: ObservableObject {
             semiya:  semiyaCount == "" ? "----" : semiyaCount,
             interes: three == "" ? "----" : three,
             trud: six == "" ?  "----" : six,
-            pamyat: nine == "" ? "----" : nine, 
+            pamyat: nine == "" ? "----" : nine,
             privichki: privichkiCount == "" ? "----" : privichkiCount,
             bit: bitCount == "" ? "----" : bitCount
         )
     }
 }
-
-
-//Table(
-//    dopChisla: dopChislo,
-//    sudba: "----",
-//    temperament: "----",
-//    harakter: "----",
-//    zdorovie: "----",
-//    udacha: "----",
-//    cell: "----",
-//    energy: "----",
-//    logic: "----",
-//    dolg:"----",
-//    semiya: "----",
-//    interes: "----",
-//    trud: "----",
-//    pamyat:"----",
-//    privichki: "----",
-//    bit: "----"
-//)

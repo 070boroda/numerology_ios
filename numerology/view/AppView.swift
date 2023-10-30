@@ -11,16 +11,20 @@ struct AppView: View {
     
     @State var selectedTab = "Расчет"
     
-    let tabs = ["Расчет", "Совместимость", "Значение показателей"]
+    let tabs = ["Расчет", "Трансформация", "Деградация", "Совместимость", "Значение показателей"]
     let counterViewModel: CounterViewModel
     let counterCompotibilityOneViewModel: CounterViewModel
     let counterCompotibilityTwoViewModel: CounterViewModel
+    let transformCounteViewModel: TransformCounrterViewModel
+    let degradationCounteViewModel: DegradationCounrterViewModel
     
     init() {
         UITabBar.appearance().isHidden = true
         counterViewModel = CounterViewModel()
         counterCompotibilityOneViewModel = CounterViewModel()
         counterCompotibilityTwoViewModel = CounterViewModel()
+        transformCounteViewModel = TransformCounrterViewModel()
+        degradationCounteViewModel = DegradationCounrterViewModel()
     }
     var body: some View {
         ZStack(alignment: .bottom){
@@ -28,12 +32,28 @@ struct AppView: View {
                 ContentView(counterViewModel:
                             counterViewModel)
                 .tag("Расчет")
+                
+                TransformView(counterViewModel: transformCounteViewModel
+                )
+                .tag("Трансформация")
+                
+                DegradationView(counterViewModel: degradationCounteViewModel
+                )
+                .tag("Деградация")
+                
                 CompatibilityView(counterOneViewModel: counterCompotibilityOneViewModel,
                     counterTwoViewModel: counterCompotibilityTwoViewModel)
                     .tag("Совместимость")
                 
-                
-                Text("Значение показателей").tag("Значение показателей")
+                Text("Значение показателей")
+                    .tag("Значение показателей")
+            }.onChange(of: selectedTab) { val in
+                if (val == "Трансформация") {
+                    transformCounteViewModel.countTable(selectedDate: counterViewModel.selectedDate)
+                }
+                if (val == "Деградация") {
+                    degradationCounteViewModel.countTable(selectedDate: counterViewModel.selectedDate)
+                }
             }
             
             HStack{
@@ -80,7 +100,7 @@ struct TabBarItem: View {
                 }
                 .opacity(selected == tab ? 1 : 0.7)
                 .padding(.vertical, 10)
-                .padding(.horizontal, 15)
+                .padding(.horizontal, 7)
                 .background(selected == tab ? Color.orange.opacity(90) : Color.orange.opacity(0.10))
                 .clipShape(Capsule())
                 
@@ -105,9 +125,55 @@ struct TabBarItem: View {
                 }
                 .opacity(selected == tab ? 1 : 0.7)
                 .padding(.vertical, 10)
-                .padding(.horizontal, 15)
+                .padding(.horizontal, 7)
                 .background(selected == tab ? Color.orange.opacity(90) : Color.orange.opacity(0.10))
                 .clipShape(Capsule())
+            case "Трансформация":
+                Button {
+                    withAnimation(.easeIn(duration: 0.3)) {
+                        selected = tab
+                    }
+                } label: {
+                    HStack{
+                        Image(systemName: "arrow.up")
+                            .resizable()
+                            .frame(width: 20, height: 20)
+                            .foregroundColor(.white)
+                            .scaleEffect(selected == tab ? 1.25 : 1.0 )
+                        if (selected == tab) {
+                            Text(tab)
+                                .font(.system(size: 16))
+                                .foregroundColor(.white)
+                        }
+                    }
+                }.opacity(selected == tab ? 1 : 0.7)
+                    .padding(.vertical, 10)
+                    .padding(.horizontal, 7)
+                    .background(selected == tab ? Color.orange.opacity(90) : Color.orange.opacity(0.10))
+                    .clipShape(Capsule())
+            case "Деградация":
+                Button {
+                    withAnimation(.easeIn(duration: 0.3)) {
+                        selected = tab
+                    }
+                } label: {
+                    HStack{
+                        Image(systemName: "arrow.down")
+                            .resizable()
+                            .frame(width: 20, height: 20)
+                            .foregroundColor(.white)
+                            .scaleEffect(selected == tab ? 1.25 : 1.0 )
+                        if (selected == tab) {
+                            Text(tab)
+                                .font(.system(size: 16))
+                                .foregroundColor(.white)
+                        }
+                    }
+                }.opacity(selected == tab ? 1 : 0.7)
+                    .padding(.vertical, 10)
+                    .padding(.horizontal, 7)
+                    .background(selected == tab ? Color.orange.opacity(90) : Color.orange.opacity(0.10))
+                    .clipShape(Capsule())
             case "Значение показателей":
                 Button {
                     withAnimation(.easeIn(duration: 0.3)) {
@@ -129,7 +195,7 @@ struct TabBarItem: View {
                 }
                 .opacity(selected == tab ? 1 : 0.7)
                 .padding(.vertical, 10)
-                .padding(.horizontal, 15)
+                .padding(.horizontal, 7)
                 .background(selected == tab ? Color.orange.opacity(90) : Color.orange.opacity(0.10))
                 .clipShape(Capsule())
             default:

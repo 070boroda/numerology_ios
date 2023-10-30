@@ -1,43 +1,42 @@
 //
-//  counterViewModel.swift
+//  DegradationCounrterViewModel.swift
 //  numerology
 //
-//  Created by Alexandr on 27.10.23.
+//  Created by Alexandr on 30.10.23.
 //
 
 import Foundation
 
-
-class CounterViewModel: ObservableObject {
+class DegradationCounrterViewModel: ObservableObject {
     
     @Published var table: Table
-    @Published var selectedDate: Date
+    // var selectedDate: Date
     
     
     init(){
         self.table =
         Table(
-          dopChisla: "----",
-          sudba: "----",
-          temperament: "----",
-          harakter: "----",
-          zdorovie: "----",
-          udacha: "----",
-          cell: "----",
-          energy: "----",
-          logic: "----",
-          dolg: "----",
-          semiya:  "----",
-          interes: "----",
-          trud: "----",
-          pamyat: "----",
-          privichki: "----",
-          bit: "----"
+            dopChisla: "----",
+            sudba: "----",
+            temperament: "----",
+            harakter: "----",
+            zdorovie: "----",
+            udacha: "----",
+            cell: "----",
+            energy: "----",
+            logic: "----",
+            dolg: "----",
+            semiya:  "----",
+            interes: "----",
+            trud: "----",
+            pamyat: "----",
+            privichki: "----",
+            bit: "----"
         )
-        self.selectedDate = Date()
+        //self.selectedDate = Date()
         
     }
-
+    
     
     func countTable(selectedDate: Date) {
         
@@ -46,7 +45,7 @@ class CounterViewModel: ObservableObject {
         let formatter3 = DateFormatter()
         formatter3.dateFormat = "dd/MM/yyyy"
         let selectedDateString =  formatter3.string(from: selectedDate)
-
+        
         let splitDate : [String] = selectedDateString.components(separatedBy: "/")
         
         let daySum = splitDate[0].compactMap{ $0.wholeNumberValue }.compactMap(Int.init).reduce(0, +)
@@ -60,22 +59,22 @@ class CounterViewModel: ObservableObject {
         
         
         var secondDopChislo: Int
-//        if (String(firstDopChislo).count == 1 ) {
-//            secondDopChislo = firstDopChislo
-//        } else {
-            secondDopChislo = String(firstDopChislo).compactMap{ $0.wholeNumberValue }.compactMap(Int.init).reduce(0, +)
-//        }
+        //        if (String(firstDopChislo).count == 1 ) {
+        //            secondDopChislo = firstDopChislo
+        //        } else {
+        secondDopChislo = String(firstDopChislo).compactMap{ $0.wholeNumberValue }.compactMap(Int.init).reduce(0, +)
+        //        }
         
         let thirdDopChislo = abs(firstDopChislo - (2 * firstNumberOfDay))
         
         var fourthDopChislo: Int
-//        if (String(thirdDopChislo).count == 1) {
-//            fourthDopChislo = thirdDopChislo
-//        } else {
-            fourthDopChislo = String(thirdDopChislo).compactMap{ $0.wholeNumberValue }.compactMap(Int.init).reduce(0,+)
-      //  }
+        //        if (String(thirdDopChislo).count == 1) {
+        //            fourthDopChislo = thirdDopChislo
+        //        } else {
+        fourthDopChislo = String(thirdDopChislo).compactMap{ $0.wholeNumberValue }.compactMap(Int.init).reduce(0,+)
+        //  }
         
-    
+        
         let longString = splitDate[0] + splitDate[1] + splitDate[2] + String(firstDopChislo) + String(secondDopChislo) + String(thirdDopChislo) + String(fourthDopChislo)
         
         //array separate all digest
@@ -128,13 +127,31 @@ class CounterViewModel: ObservableObject {
         if (sudba != 11) {
             while (String(sudba).count > 1) {
                 sudba = String(sudba).compactMap{ $0.wholeNumberValue }.compactMap(Int.init).reduce(0, +)
-                    if (sudba == 11) {
-                        break
-                    }
+                if (sudba == 11) {
+                    break
                 }
             }
+        }
         
         dopChislo = String(firstDopChislo) + "," + String(secondDopChislo) + "," + String(thirdDopChislo) + "," + String(fourthDopChislo)
+        
+        
+        if (eight.count > 0) {
+            for _ in 0..<six.count {
+                one += "11"
+            }
+        }
+        
+        eight = ""
+        
+        if (seven.count > 0) {
+            for _ in 0..<seven.count {
+                six += "6"
+            }
+        }
+        
+        seven = ""
+        
         
         self.table = Table(
             dopChisla: dopChislo,
@@ -150,29 +167,9 @@ class CounterViewModel: ObservableObject {
             semiya:  semiyaCount == "" ? "----" : semiyaCount,
             interes: three == "" ? "----" : three,
             trud: six == "" ?  "----" : six,
-            pamyat: nine == "" ? "----" : nine, 
+            pamyat: nine == "" ? "----" : nine,
             privichki: privichkiCount == "" ? "----" : privichkiCount,
             bit: bitCount == "" ? "----" : bitCount
         )
     }
 }
-
-
-//Table(
-//    dopChisla: dopChislo,
-//    sudba: "----",
-//    temperament: "----",
-//    harakter: "----",
-//    zdorovie: "----",
-//    udacha: "----",
-//    cell: "----",
-//    energy: "----",
-//    logic: "----",
-//    dolg:"----",
-//    semiya: "----",
-//    interes: "----",
-//    trud: "----",
-//    pamyat:"----",
-//    privichki: "----",
-//    bit: "----"
-//)

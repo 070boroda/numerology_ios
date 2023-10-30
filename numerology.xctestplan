@@ -9,6 +9,8 @@
     }
   ],
   "defaultOptions" : {
+    "language" : "ru",
+    "region" : "RU",
     "targetForVariableExpansion" : {
       "containerPath" : "container:numerology.xcodeproj",
       "identifier" : "A8D8FE582AE99A0000475B20",
@@ -16,24 +18,6 @@
     }
   },
   "testTargets" : [
-    {
-      "enabled" : false,
-      "parallelizable" : true,
-      "target" : {
-        "containerPath" : "container:numerology.xcodeproj",
-        "identifier" : "A8D8FE682AE99A0300475B20",
-        "name" : "numerologyTests"
-      }
-    },
-    {
-      "enabled" : false,
-      "parallelizable" : true,
-      "target" : {
-        "containerPath" : "container:numerology.xcodeproj",
-        "identifier" : "A8D8FE722AE99A0300475B20",
-        "name" : "numerologyUITests"
-      }
-    },
     {
       "parallelizable" : true,
       "target" : {
