@@ -1,0 +1,6 @@
+framework module Pods_numerology {
+  umbrella header "Pods-numerology-umbrella.h"
+
+  export *
+  module * { export * }
+}

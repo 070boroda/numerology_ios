@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12F632BC5673774656CC6C12 /* Pods_numerology.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40647194937840EF2D7400B4 /* Pods_numerology.framework */; };
 		A837D2932AECD331003312E4 /* numerologyTestsCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837D2922AECD331003312E4 /* numerologyTestsCounter.swift */; };
 		A837D29B2AEE3EE3003312E4 /* CompatibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837D29A2AEE3EE3003312E4 /* CompatibilityView.swift */; };
 		A837D29D2AEEC4B9003312E4 /* TransformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837D29C2AEEC4B9003312E4 /* TransformView.swift */; };
 		A837D29F2AEEC5F3003312E4 /* TransformCounrterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837D29E2AEEC5F3003312E4 /* TransformCounrterViewModel.swift */; };
 		A837D2A12AF00227003312E4 /* DegradationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837D2A02AF00226003312E4 /* DegradationView.swift */; };
 		A837D2A32AF002DC003312E4 /* DegradationCounrterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837D2A22AF002DC003312E4 /* DegradationCounrterViewModel.swift */; };
+		A837D2A52AF41332003312E4 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837D2A42AF41332003312E4 /* HelpView.swift */; };
+		A85632B32AF764EB001B1BC2 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85632B22AF764EB001B1BC2 /* Card.swift */; };
+		A85632B52AF7679D001B1BC2 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A85632B42AF7679D001B1BC2 /* Localizable.xcstrings */; };
 		A8D8FE5D2AE99A0000475B20 /* numerologyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8FE5C2AE99A0000475B20 /* numerologyApp.swift */; };
 		A8D8FE5F2AE99A0000475B20 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8FE5E2AE99A0000475B20 /* ContentView.swift */; };
 		A8D8FE612AE99A0200475B20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8D8FE602AE99A0200475B20 /* Assets.xcassets */; };
@@ -34,8 +38,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A80838F92AF430480052D3FA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		A837D2902AECD331003312E4 /* numerologyTestsCounter.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = numerologyTestsCounter.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		40647194937840EF2D7400B4 /* Pods_numerology.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_numerology.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80838F52AF42D8A0052D3FA /* numerology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = numerology.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80838F62AF42D8A0052D3FA /* numerologyTestsCounter.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = numerologyTestsCounter.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A837D2922AECD331003312E4 /* numerologyTestsCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numerologyTestsCounter.swift; sourceTree = "<group>"; };
 		A837D2992AECD624003312E4 /* numerology.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = numerology.xctestplan; sourceTree = "<group>"; };
 		A837D29A2AEE3EE3003312E4 /* CompatibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompatibilityView.swift; sourceTree = "<group>"; };
@@ -43,7 +62,9 @@
 		A837D29E2AEEC5F3003312E4 /* TransformCounrterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformCounrterViewModel.swift; sourceTree = "<group>"; };
 		A837D2A02AF00226003312E4 /* DegradationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DegradationView.swift; sourceTree = "<group>"; };
 		A837D2A22AF002DC003312E4 /* DegradationCounrterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DegradationCounrterViewModel.swift; sourceTree = "<group>"; };
-		A8D8FE592AE99A0000475B20 /* numerology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = numerology.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A837D2A42AF41332003312E4 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		A85632B22AF764EB001B1BC2 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		A85632B42AF7679D001B1BC2 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		A8D8FE5C2AE99A0000475B20 /* numerologyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numerologyApp.swift; sourceTree = "<group>"; };
 		A8D8FE5E2AE99A0000475B20 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A8D8FE602AE99A0200475B20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +74,8 @@
 		A8FFB5A42AEC3773007C491C /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		A8FFB5A92AEC565C007C491C /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 		A8FFB5AD2AEC5891007C491C /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
+		ED62BA6042810E029D9A19A8 /* Pods-numerology.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-numerology.debug.xcconfig"; path = "Target Support Files/Pods-numerology/Pods-numerology.debug.xcconfig"; sourceTree = "<group>"; };
+		FB4A2AAE652B9FD53CE78C55 /* Pods-numerology.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-numerology.release.xcconfig"; path = "Target Support Files/Pods-numerology/Pods-numerology.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,18 +90,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12F632BC5673774656CC6C12 /* Pods_numerology.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		352EA078E2B1EB164E7E9854 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED62BA6042810E029D9A19A8 /* Pods-numerology.debug.xcconfig */,
+				FB4A2AAE652B9FD53CE78C55 /* Pods-numerology.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4E178048CF6DCF1A9A2F8EDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40647194937840EF2D7400B4 /* Pods_numerology.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A837D2912AECD331003312E4 /* numerologyTestsCounter */ = {
 			isa = PBXGroup;
 			children = (
 				A837D2922AECD331003312E4 /* numerologyTestsCounter.swift */,
 			);
 			path = numerologyTestsCounter;
+			sourceTree = "<group>";
+		};
+		A85632B12AF764CE001B1BC2 /* subview */ = {
+			isa = PBXGroup;
+			children = (
+				A85632B22AF764EB001B1BC2 /* Card.swift */,
+			);
+			path = subview;
 			sourceTree = "<group>";
 		};
 		A8D8FE502AE99A0000475B20 = {
@@ -88,26 +137,22 @@
 				A8FFB59E2AE9B4BB007C491C /* .gitignore */,
 				A8D8FE5B2AE99A0000475B20 /* numerology */,
 				A837D2912AECD331003312E4 /* numerologyTestsCounter */,
-				A8D8FE5A2AE99A0000475B20 /* Products */,
+				352EA078E2B1EB164E7E9854 /* Pods */,
+				A80838F52AF42D8A0052D3FA /* numerology.app */,
+				A80838F62AF42D8A0052D3FA /* numerologyTestsCounter.xctest */,
+				4E178048CF6DCF1A9A2F8EDA /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		A8D8FE5A2AE99A0000475B20 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A8D8FE592AE99A0000475B20 /* numerology.app */,
-				A837D2902AECD331003312E4 /* numerologyTestsCounter.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		A8D8FE5B2AE99A0000475B20 /* numerology */ = {
 			isa = PBXGroup;
 			children = (
+				A85632B12AF764CE001B1BC2 /* subview */,
 				A8FFB5AC2AEC5863007C491C /* viewmodel */,
 				A8FFB5AB2AEC5833007C491C /* view */,
 				A8FFB5A82AEC5642007C491C /* model */,
 				A8D8FE5C2AE99A0000475B20 /* numerologyApp.swift */,
+				A85632B42AF7679D001B1BC2 /* Localizable.xcstrings */,
 				A8D8FE602AE99A0200475B20 /* Assets.xcassets */,
 				A8D8FE622AE99A0200475B20 /* Preview Content */,
 			);
@@ -139,6 +184,7 @@
 				A837D29A2AEE3EE3003312E4 /* CompatibilityView.swift */,
 				A837D29C2AEEC4B9003312E4 /* TransformView.swift */,
 				A837D2A02AF00226003312E4 /* DegradationView.swift */,
+				A837D2A42AF41332003312E4 /* HelpView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -171,16 +217,19 @@
 			);
 			name = numerologyTestsCounter;
 			productName = numerologyTestsCounter;
-			productReference = A837D2902AECD331003312E4 /* numerologyTestsCounter.xctest */;
+			productReference = A80838F62AF42D8A0052D3FA /* numerologyTestsCounter.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		A8D8FE582AE99A0000475B20 /* numerology */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8D8FE7D2AE99A0300475B20 /* Build configuration list for PBXNativeTarget "numerology" */;
 			buildPhases = (
+				5455F17D4EA644CCCAA852DD /* [CP] Check Pods Manifest.lock */,
 				A8D8FE552AE99A0000475B20 /* Sources */,
 				A8D8FE562AE99A0000475B20 /* Frameworks */,
 				A8D8FE572AE99A0000475B20 /* Resources */,
+				A80838F92AF430480052D3FA /* Embed Frameworks */,
+				BBC49A333409BEFA2A9AA364 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,7 +237,7 @@
 			);
 			name = numerology;
 			productName = numerology;
-			productReference = A8D8FE592AE99A0000475B20 /* numerology.app */;
+			productReference = A80838F52AF42D8A0052D3FA /* numerology.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -212,14 +261,14 @@
 			};
 			buildConfigurationList = A8D8FE542AE99A0000475B20 /* Build configuration list for PBXProject "numerology" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = ru;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				ru,
 			);
 			mainGroup = A8D8FE502AE99A0000475B20;
-			productRefGroup = A8D8FE5A2AE99A0000475B20 /* Products */;
+			productRefGroup = A8D8FE502AE99A0000475B20;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -243,11 +292,54 @@
 			files = (
 				A8D8FE642AE99A0200475B20 /* Preview Assets.xcassets in Resources */,
 				A8FFB59F2AE9B4BB007C491C /* .gitignore in Resources */,
+				A85632B52AF7679D001B1BC2 /* Localizable.xcstrings in Resources */,
 				A8D8FE612AE99A0200475B20 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5455F17D4EA644CCCAA852DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-numerology-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBC49A333409BEFA2A9AA364 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-numerology/Pods-numerology-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-numerology/Pods-numerology-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-numerology/Pods-numerology-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A837D28C2AECD331003312E4 /* Sources */ = {
@@ -263,8 +355,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8FFB5AA2AEC565C007C491C /* Table.swift in Sources */,
+				A837D2A52AF41332003312E4 /* HelpView.swift in Sources */,
 				A837D2A12AF00227003312E4 /* DegradationView.swift in Sources */,
 				A8FFB5AE2AEC5891007C491C /* CounterViewModel.swift in Sources */,
+				A85632B32AF764EB001B1BC2 /* Card.swift in Sources */,
 				A8FFB5A52AEC3774007C491C /* AppView.swift in Sources */,
 				A837D2A32AF002DC003312E4 /* DegradationCounrterViewModel.swift in Sources */,
 				A8D8FE5F2AE99A0000475B20 /* ContentView.swift in Sources */,
@@ -361,7 +455,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -424,7 +518,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -445,6 +539,7 @@
 		};
 		A8D8FE7E2AE99A0300475B20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED62BA6042810E029D9A19A8 /* Pods-numerology.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -478,6 +573,7 @@
 		};
 		A8D8FE7F2AE99A0300475B20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB4A2AAE652B9FD53CE78C55 /* Pods-numerology.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

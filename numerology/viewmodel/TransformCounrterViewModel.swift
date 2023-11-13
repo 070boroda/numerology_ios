@@ -116,11 +116,11 @@ class TransformCounrterViewModel: ObservableObject {
             }
         }
         
-        let temperamentCount: String = String((three + five + seven).count)
-        let bitCount: String = String((four + five + six).count)
-        let cellCount: String = String((one + four + seven).count)
-        let semiyaCount: String = String((two + five + eight).count)
-        let privichkiCount: String = String((three + six + nine).count)
+        var temperamentCount: String = String((three + five + seven).count)
+        var bitCount: String = String((four + five + six).count)
+        var cellCount: String = String((one + four + seven).count)
+        var semiyaCount: String = String((two + five + eight).count)
+        var privichkiCount: String = String((three + six + nine).count)
         
         var sudba = secondDopChislo
         
@@ -159,6 +159,13 @@ class TransformCounrterViewModel: ObservableObject {
             }
         
         six = ""
+        
+        
+        temperamentCount = String((three + five + seven).count)
+        bitCount = String((four + five + six).count)
+        cellCount = String((one + four + seven).count)
+        semiyaCount = String((two + five + eight).count)
+        privichkiCount  = String((three + six + nine).count)
         
         self.table = Table(
             dopChisla: dopChislo,
