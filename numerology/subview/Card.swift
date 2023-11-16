@@ -11,10 +11,11 @@ import SimpleExpandableView
 struct Card: View {
     var title: String
     var content: Text
+    var height: Int
     var body: some View {
         ExpandableView(
             headerSize: CGSize(width: 370.0, height: 50.0),
-            cardSize: CGSize(width: 370, height: 250.0), header: {
+            cardSize: CGSize(width: 370, height: height), header: {
                 Text(title)
                     .font(.title2)
                     .foregroundColor(.white)
