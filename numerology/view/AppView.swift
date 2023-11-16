@@ -45,8 +45,10 @@ struct AppView: View {
                     counterTwoViewModel: counterCompotibilityTwoViewModel)
                     .tag("Совместимость")
                 
-                Text("Значение показателей")
+                HelpView()
                     .tag("Значение показателей")
+                
+                
             }.onChange(of: selectedTab) { val in
                 if (val == "Трансформация") {
                     transformCounteViewModel.countTable(selectedDate: counterViewModel.selectedDate)

@@ -1,0 +1,16 @@
+PODS:
+  - SimpleExpandableView (0.1.0)
+
+DEPENDENCIES:
+  - SimpleExpandableView
+
+SPEC REPOS:
+  trunk:
+    - SimpleExpandableView
+
+SPEC CHECKSUMS:
+  SimpleExpandableView: 63a236435c9fda60baa961e76489ac8558a54468
+
+PODFILE CHECKSUM: 464a4addc84b0dd261f8f4f370ffd44a3fb97acc
+
+COCOAPODS: 1.14.2
