@@ -14,6 +14,7 @@ struct CompatibilityView: View {
         ScrollView {
             TableCell(counterViewModel: counterOneViewModel)
             TableCell(counterViewModel: counterTwoViewModel)
+            SwiftUIViewController()
             Spacer()
             Spacer()
         }.frame(
@@ -217,27 +218,10 @@ struct LastRowCompatibility: View {
             .background(Color.cyan.opacity(0.63))
             .cornerRadius(12)
             
-//            VStack{
-//                Text("")
-//                    .font(.custom("AvenirNext-Bold", size: 12))
-//                    .foregroundColor(.white)
-//                Text("")
-//                    .font(.custom("AvenirNext-Bold", size: 18))
-//                    .foregroundColor(.white)
-//            }
-//            .frame(width: screen.width/4.4,
-//                   height: screen.width/5)
-//            .background(Color.cyan.opacity(0))
-//            .cornerRadius(12)
+
             
             VStack{
                 CalendarCompatibility(counterViewModel: counterViewModel)
-//                Text("")
-//                    .font(.custom("AvenirNext-Bold", size: 12))
-//                    .foregroundColor(.white)
-//                Text("")
-//                    .font(.custom("AvenirNext-Bold", size: 18))
-//                    .foregroundColor(.white)
             }
             .frame(width: screen.width/2.1,
                    height: screen.width/7)

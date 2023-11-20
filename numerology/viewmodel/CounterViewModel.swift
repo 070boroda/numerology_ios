@@ -156,23 +156,3 @@ class CounterViewModel: ObservableObject {
         )
     }
 }
-
-
-//Table(
-//    dopChisla: dopChislo,
-//    sudba: "----",
-//    temperament: "----",
-//    harakter: "----",
-//    zdorovie: "----",
-//    udacha: "----",
-//    cell: "----",
-//    energy: "----",
-//    logic: "----",
-//    dolg:"----",
-//    semiya: "----",
-//    interes: "----",
-//    trud: "----",
-//    pamyat:"----",
-//    privichki: "----",
-//    bit: "----"
-//)

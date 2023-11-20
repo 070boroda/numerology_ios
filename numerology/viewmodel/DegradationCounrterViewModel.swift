@@ -10,8 +10,6 @@ import Foundation
 class DegradationCounrterViewModel: ObservableObject {
     
     @Published var table: Table
-    // var selectedDate: Date
-    
     
     init(){
         self.table =
@@ -33,7 +31,6 @@ class DegradationCounrterViewModel: ObservableObject {
             privichki: "----",
             bit: "----"
         )
-        //self.selectedDate = Date()
         
     }
     

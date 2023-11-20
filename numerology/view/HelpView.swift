@@ -27,7 +27,7 @@ struct HelpView: View {
             Card(title: "БЫТ", content: Text("bit_text"), height: 250)
             Card(title: "ПРИВЫЧКИ", content: Text("privichki_text"), height: 150)
             Card(title: "ЧИСЛО СУДЬБЫ", content: Text("sudba_text"), height: 140)
-        
+            SwiftUIViewController()
         }
         .frame(
             minWidth: 0,

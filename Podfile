@@ -6,4 +6,6 @@ target 'numerology' do
   use_frameworks!
 
 	pod 'SimpleExpandableView'
+  pod 'YandexMobileAds'
+  pod 'YandexMobileAdsInstream'
 end

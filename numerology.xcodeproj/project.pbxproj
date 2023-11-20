@@ -15,6 +15,9 @@
 		A837D2A12AF00227003312E4 /* DegradationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837D2A02AF00226003312E4 /* DegradationView.swift */; };
 		A837D2A32AF002DC003312E4 /* DegradationCounrterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837D2A22AF002DC003312E4 /* DegradationCounrterViewModel.swift */; };
 		A837D2A52AF41332003312E4 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837D2A42AF41332003312E4 /* HelpView.swift */; };
+		A83A2CDD2B09E70900F65338 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83A2CDC2B09E70900F65338 /* View.swift */; };
+		A83A2CE32B0A441E00F65338 /* StickyBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83A2CE22B0A441E00F65338 /* StickyBannerViewController.swift */; };
+		A83A2CE52B0A479F00F65338 /* SwiftUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83A2CE42B0A479F00F65338 /* SwiftUIViewController.swift */; };
 		A85632B32AF764EB001B1BC2 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85632B22AF764EB001B1BC2 /* Card.swift */; };
 		A85632B52AF7679D001B1BC2 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A85632B42AF7679D001B1BC2 /* Localizable.xcstrings */; };
 		A8D8FE5D2AE99A0000475B20 /* numerologyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8FE5C2AE99A0000475B20 /* numerologyApp.swift */; };
@@ -63,6 +66,10 @@
 		A837D2A02AF00226003312E4 /* DegradationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DegradationView.swift; sourceTree = "<group>"; };
 		A837D2A22AF002DC003312E4 /* DegradationCounrterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DegradationCounrterViewModel.swift; sourceTree = "<group>"; };
 		A837D2A42AF41332003312E4 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		A83A2CD12B09CB2200F65338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A83A2CDC2B09E70900F65338 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		A83A2CE22B0A441E00F65338 /* StickyBannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyBannerViewController.swift; sourceTree = "<group>"; };
+		A83A2CE42B0A479F00F65338 /* SwiftUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewController.swift; sourceTree = "<group>"; };
 		A85632B22AF764EB001B1BC2 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		A85632B42AF7679D001B1BC2 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		A8D8FE5C2AE99A0000475B20 /* numerologyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numerologyApp.swift; sourceTree = "<group>"; };
@@ -122,6 +129,23 @@
 			path = numerologyTestsCounter;
 			sourceTree = "<group>";
 		};
+		A83A2CD22B09CD0300F65338 /* ads */ = {
+			isa = PBXGroup;
+			children = (
+				A83A2CE22B0A441E00F65338 /* StickyBannerViewController.swift */,
+				A83A2CE42B0A479F00F65338 /* SwiftUIViewController.swift */,
+			);
+			path = ads;
+			sourceTree = "<group>";
+		};
+		A83A2CDB2B09E6E600F65338 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A83A2CDC2B09E70900F65338 /* View.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
 		A85632B12AF764CE001B1BC2 /* subview */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +171,9 @@
 		A8D8FE5B2AE99A0000475B20 /* numerology */ = {
 			isa = PBXGroup;
 			children = (
+				A83A2CDB2B09E6E600F65338 /* extensions */,
+				A83A2CD22B09CD0300F65338 /* ads */,
+				A83A2CD12B09CB2200F65338 /* Info.plist */,
 				A85632B12AF764CE001B1BC2 /* subview */,
 				A8FFB5AC2AEC5863007C491C /* viewmodel */,
 				A8FFB5AB2AEC5833007C491C /* view */,
@@ -230,6 +257,7 @@
 				A8D8FE572AE99A0000475B20 /* Resources */,
 				A80838F92AF430480052D3FA /* Embed Frameworks */,
 				BBC49A333409BEFA2A9AA364 /* [CP] Embed Pods Frameworks */,
+				7A11D24F151A064F225F001D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -322,6 +350,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7A11D24F151A064F225F001D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-numerology/Pods-numerology-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-numerology/Pods-numerology-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-numerology/Pods-numerology-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BBC49A333409BEFA2A9AA364 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -356,14 +401,17 @@
 			files = (
 				A8FFB5AA2AEC565C007C491C /* Table.swift in Sources */,
 				A837D2A52AF41332003312E4 /* HelpView.swift in Sources */,
+				A83A2CDD2B09E70900F65338 /* View.swift in Sources */,
 				A837D2A12AF00227003312E4 /* DegradationView.swift in Sources */,
 				A8FFB5AE2AEC5891007C491C /* CounterViewModel.swift in Sources */,
 				A85632B32AF764EB001B1BC2 /* Card.swift in Sources */,
 				A8FFB5A52AEC3774007C491C /* AppView.swift in Sources */,
+				A83A2CE32B0A441E00F65338 /* StickyBannerViewController.swift in Sources */,
 				A837D2A32AF002DC003312E4 /* DegradationCounrterViewModel.swift in Sources */,
 				A8D8FE5F2AE99A0000475B20 /* ContentView.swift in Sources */,
 				A8D8FE5D2AE99A0000475B20 /* numerologyApp.swift in Sources */,
 				A837D29D2AEEC4B9003312E4 /* TransformView.swift in Sources */,
+				A83A2CE52B0A479F00F65338 /* SwiftUIViewController.swift in Sources */,
 				A8FFB5A32AEAEBEB007C491C /* NavigationBar.swift in Sources */,
 				A837D29B2AEE3EE3003312E4 /* CompatibilityView.swift in Sources */,
 				A837D29F2AEEC5F3003312E4 /* TransformCounrterViewModel.swift in Sources */,
@@ -550,6 +598,7 @@
 				DEVELOPMENT_TEAM = 55J7T8YCH5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = numerology/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Психоматрица Квадрат Пифагора";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -584,6 +633,7 @@
 				DEVELOPMENT_TEAM = 55J7T8YCH5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = numerology/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Психоматрица Квадрат Пифагора";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

@@ -84,11 +84,10 @@ struct TransformView: View {
                 fourthContentText: counterViewModel.table.privichki)
             LastRow(secondText:"Быт", secondContentText: counterViewModel.table.bit)
                 .padding(.bottom, 40)
-//            Calendar(counterViewModel: counterViewModel)
-//                .padding(.bottom, 150)
             Text("Трансформация")
                 .font(.custom("AvenirNext-Bold", size: 24))
                 .foregroundColor(.white)
+            SwiftUIViewController()
             Spacer()
         }.frame(
             minWidth: 0,

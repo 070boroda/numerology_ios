@@ -1,2 +1,11 @@
 ${PODS_ROOT}/Target Support Files/Pods-numerology/Pods-numerology-frameworks.sh
+${BUILT_PRODUCTS_DIR}/DivKit/DivKit.framework
+${BUILT_PRODUCTS_DIR}/DivKit_LayoutKit/LayoutKit.framework
+${BUILT_PRODUCTS_DIR}/DivKit_LayoutKitInterface/LayoutKitInterface.framework
+${BUILT_PRODUCTS_DIR}/DivKit_Serialization/Serialization.framework
 ${BUILT_PRODUCTS_DIR}/SimpleExpandableView/SimpleExpandableView.framework
+${BUILT_PRODUCTS_DIR}/VGSLBase/BasePublic.framework
+${BUILT_PRODUCTS_DIR}/VGSLBaseTiny/BaseTinyPublic.framework
+${BUILT_PRODUCTS_DIR}/VGSLBaseUI/BaseUIPublic.framework
+${BUILT_PRODUCTS_DIR}/VGSLCommonCore/CommonCorePublic.framework
+${BUILT_PRODUCTS_DIR}/VGSLNetworking/NetworkingPublic.framework

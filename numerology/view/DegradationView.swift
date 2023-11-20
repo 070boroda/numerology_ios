@@ -88,8 +88,7 @@ struct DegradationView: View {
             Text("Деградация")
                 .font(.custom("AvenirNext-Bold", size: 24))
                 .foregroundColor(.white)
-//            Calendar(counterViewModel: counterViewModel)
-//                .padding(.bottom, 150)
+            SwiftUIViewController()
             Spacer()
         }.frame(
             minWidth: 0,

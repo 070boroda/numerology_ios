@@ -176,10 +176,28 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/DivKit/DivKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DivKit_LayoutKit/LayoutKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DivKit_LayoutKitInterface/LayoutKitInterface.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DivKit_Serialization/Serialization.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SimpleExpandableView/SimpleExpandableView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/VGSLBase/BasePublic.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/VGSLBaseTiny/BaseTinyPublic.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/VGSLBaseUI/BaseUIPublic.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/VGSLCommonCore/CommonCorePublic.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/VGSLNetworking/NetworkingPublic.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/DivKit/DivKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DivKit_LayoutKit/LayoutKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DivKit_LayoutKitInterface/LayoutKitInterface.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/DivKit_Serialization/Serialization.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SimpleExpandableView/SimpleExpandableView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/VGSLBase/BasePublic.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/VGSLBaseTiny/BaseTinyPublic.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/VGSLBaseUI/BaseUIPublic.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/VGSLCommonCore/CommonCorePublic.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/VGSLNetworking/NetworkingPublic.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

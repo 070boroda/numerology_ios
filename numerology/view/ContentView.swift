@@ -6,11 +6,11 @@
 //
 
 import SwiftUI
+import YandexMobileAds
 
 struct ContentView: View {
     
     @StateObject var counterViewModel: CounterViewModel
-
     
     var body: some View {
         VStack(){
@@ -53,6 +53,7 @@ struct ContentView: View {
                        height: screen.width/5)
                 .background(Color.cyan.opacity(1))
                 .cornerRadius(12)
+                
         }
             
 
@@ -258,6 +259,7 @@ struct Calendar: View {
             .colorMultiply(.white)
             .colorInvert()
             .environment(\.locale, Locale.init(identifier: "ru"))
+            SwiftUIViewController()
         }
     }
 }
