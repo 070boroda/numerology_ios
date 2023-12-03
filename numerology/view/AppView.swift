@@ -17,6 +17,7 @@ struct AppView: View {
     let counterCompotibilityTwoViewModel: CounterViewModel
     let transformCounteViewModel: TransformCounrterViewModel
     let degradationCounteViewModel: DegradationCounrterViewModel
+    let store: StoreVM
     
     init() {
         UITabBar.appearance().isHidden = true
@@ -25,24 +26,26 @@ struct AppView: View {
         counterCompotibilityTwoViewModel = CounterViewModel()
         transformCounteViewModel = TransformCounrterViewModel()
         degradationCounteViewModel = DegradationCounrterViewModel()
+        store = StoreVM()
     }
     var body: some View {
         ZStack(alignment: .bottom){
             TabView(selection: $selectedTab){
-                ContentView(counterViewModel:
-                            counterViewModel)
+                ContentView(counterViewModel: counterViewModel, storeVM: store)
                 .tag("Расчет")
                 
-                TransformView(counterViewModel: transformCounteViewModel
+                TransformView(counterViewModel: transformCounteViewModel, 
+                              degrCounterViewModel: degradationCounteViewModel,
+                              storeVM: store
                 )
                 .tag("Трансформация")
                 
-                DegradationView(counterViewModel: degradationCounteViewModel
+                DegradationView(counterViewModel: degradationCounteViewModel, storeVM: store
                 )
                 .tag("Деградация")
                 
                 CompatibilityView(counterOneViewModel: counterCompotibilityOneViewModel,
-                    counterTwoViewModel: counterCompotibilityTwoViewModel)
+                    counterTwoViewModel: counterCompotibilityTwoViewModel, storeVM: store)
                     .tag("Совместимость")
                 
                 HelpView()
@@ -50,12 +53,13 @@ struct AppView: View {
                 
                 
             }.onChange(of: selectedTab) { val in
-                if (val == "Трансформация") {
+                if (val == "Трансформация" && !store.purchasedSubscriptions.isEmpty) {
                     transformCounteViewModel.countTable(selectedDate: counterViewModel.selectedDate)
-                }
-                if (val == "Деградация") {
                     degradationCounteViewModel.countTable(selectedDate: counterViewModel.selectedDate)
                 }
+//                if (val == "Деградация" && !store.purchasedSubscriptions.isEmpty) {
+//                    degradationCounteViewModel.countTable(selectedDate: counterViewModel.selectedDate)
+//                }
             }
             
             HStack{

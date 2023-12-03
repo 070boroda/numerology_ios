@@ -10,6 +10,8 @@ import SwiftUI
 struct DegradationView: View {
     
     @StateObject var counterViewModel: DegradationCounrterViewModel
+    @StateObject var storeVM: StoreVM
+    @State private var showingSheet = false
     
     var body: some View {
      
@@ -85,10 +87,20 @@ struct DegradationView: View {
             LastRow(secondText:"Быт", secondContentText: counterViewModel.table.bit)
                 .padding(.bottom, 40)
             
-            Text("Деградация")
-                .font(.custom("AvenirNext-Bold", size: 24))
-                .foregroundColor(.white)
-            SwiftUIViewController()
+            if (storeVM.purchasedSubscriptions.isEmpty) {
+                Button("Оформить подписку") {
+                    showingSheet.toggle()
+                }
+                .buttonStyle(.borderedProminent)
+                .sheet(isPresented: self.$showingSheet) {
+                    SubscriptionView().environmentObject(storeVM)
+                }
+                SwiftUIViewController()
+            } else {
+                Text("Деградация")
+                    .font(.custom("AvenirNext-Bold", size: 24))
+                    .foregroundColor(.white)
+            }
             Spacer()
         }.frame(
             minWidth: 0,

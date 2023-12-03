@@ -18,6 +18,8 @@
 		A83A2CDD2B09E70900F65338 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83A2CDC2B09E70900F65338 /* View.swift */; };
 		A83A2CE32B0A441E00F65338 /* StickyBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83A2CE22B0A441E00F65338 /* StickyBannerViewController.swift */; };
 		A83A2CE52B0A479F00F65338 /* SwiftUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83A2CE42B0A479F00F65338 /* SwiftUIViewController.swift */; };
+		A83A2CEA2B0BDCD700F65338 /* StoreVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83A2CE92B0BDCD700F65338 /* StoreVM.swift */; };
+		A83A2CEC2B0BE0E600F65338 /* SubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83A2CEB2B0BE0E600F65338 /* SubscriptionView.swift */; };
 		A85632B32AF764EB001B1BC2 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85632B22AF764EB001B1BC2 /* Card.swift */; };
 		A85632B52AF7679D001B1BC2 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A85632B42AF7679D001B1BC2 /* Localizable.xcstrings */; };
 		A8D8FE5D2AE99A0000475B20 /* numerologyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D8FE5C2AE99A0000475B20 /* numerologyApp.swift */; };
@@ -70,6 +72,9 @@
 		A83A2CDC2B09E70900F65338 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		A83A2CE22B0A441E00F65338 /* StickyBannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyBannerViewController.swift; sourceTree = "<group>"; };
 		A83A2CE42B0A479F00F65338 /* SwiftUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewController.swift; sourceTree = "<group>"; };
+		A83A2CE82B0BDA0500F65338 /* Software Service.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Software Service.storekit"; sourceTree = "<group>"; };
+		A83A2CE92B0BDCD700F65338 /* StoreVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreVM.swift; sourceTree = "<group>"; };
+		A83A2CEB2B0BE0E600F65338 /* SubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionView.swift; sourceTree = "<group>"; };
 		A85632B22AF764EB001B1BC2 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		A85632B42AF7679D001B1BC2 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		A8D8FE5C2AE99A0000475B20 /* numerologyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numerologyApp.swift; sourceTree = "<group>"; };
@@ -146,6 +151,15 @@
 			path = extensions;
 			sourceTree = "<group>";
 		};
+		A83A2CE62B0BD93700F65338 /* store */ = {
+			isa = PBXGroup;
+			children = (
+				A83A2CE92B0BDCD700F65338 /* StoreVM.swift */,
+				A83A2CEB2B0BE0E600F65338 /* SubscriptionView.swift */,
+			);
+			path = store;
+			sourceTree = "<group>";
+		};
 		A85632B12AF764CE001B1BC2 /* subview */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +185,7 @@
 		A8D8FE5B2AE99A0000475B20 /* numerology */ = {
 			isa = PBXGroup;
 			children = (
+				A83A2CE62B0BD93700F65338 /* store */,
 				A83A2CDB2B09E6E600F65338 /* extensions */,
 				A83A2CD22B09CD0300F65338 /* ads */,
 				A83A2CD12B09CB2200F65338 /* Info.plist */,
@@ -179,6 +194,7 @@
 				A8FFB5AB2AEC5833007C491C /* view */,
 				A8FFB5A82AEC5642007C491C /* model */,
 				A8D8FE5C2AE99A0000475B20 /* numerologyApp.swift */,
+				A83A2CE82B0BDA0500F65338 /* Software Service.storekit */,
 				A85632B42AF7679D001B1BC2 /* Localizable.xcstrings */,
 				A8D8FE602AE99A0200475B20 /* Assets.xcassets */,
 				A8D8FE622AE99A0200475B20 /* Preview Content */,
@@ -410,9 +426,11 @@
 				A837D2A32AF002DC003312E4 /* DegradationCounrterViewModel.swift in Sources */,
 				A8D8FE5F2AE99A0000475B20 /* ContentView.swift in Sources */,
 				A8D8FE5D2AE99A0000475B20 /* numerologyApp.swift in Sources */,
+				A83A2CEC2B0BE0E600F65338 /* SubscriptionView.swift in Sources */,
 				A837D29D2AEEC4B9003312E4 /* TransformView.swift in Sources */,
 				A83A2CE52B0A479F00F65338 /* SwiftUIViewController.swift in Sources */,
 				A8FFB5A32AEAEBEB007C491C /* NavigationBar.swift in Sources */,
+				A83A2CEA2B0BDCD700F65338 /* StoreVM.swift in Sources */,
 				A837D29B2AEE3EE3003312E4 /* CompatibilityView.swift in Sources */,
 				A837D29F2AEEC5F3003312E4 /* TransformCounrterViewModel.swift in Sources */,
 			);

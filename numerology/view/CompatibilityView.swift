@@ -10,11 +10,17 @@ import SwiftUI
 struct CompatibilityView: View {
     var counterOneViewModel: CounterViewModel
     var counterTwoViewModel: CounterViewModel
+    
+    @StateObject var storeVM: StoreVM
+    
     var body: some View {
         ScrollView {
-            TableCell(counterViewModel: counterOneViewModel)
-            TableCell(counterViewModel: counterTwoViewModel)
-            SwiftUIViewController()
+            TableCell(counterViewModel: counterOneViewModel, storeVM: storeVM)
+            TableCell(counterViewModel: counterTwoViewModel,  storeVM: storeVM)
+            
+            if (storeVM.purchasedSubscriptions.isEmpty) {
+                SwiftUIViewController()
+            }
             Spacer()
             Spacer()
         }.frame(
@@ -33,6 +39,7 @@ struct CompatibilityView: View {
 
 struct TableCell: View {
     @StateObject var counterViewModel: CounterViewModel
+    @StateObject var storeVM: StoreVM
     var body: some View {
         
         VStack(){
@@ -47,8 +54,8 @@ struct TableCell: View {
                 }
                 .frame(width: screen.width/2.1,
                        height: screen.width/7)
-                    .background(Color.cyan.opacity(1))
-                    .cornerRadius(12)
+                .background(Color.cyan.opacity(1))
+                .cornerRadius(12)
                 
                 VStack{
                     Text("Число судьбы")
@@ -60,67 +67,65 @@ struct TableCell: View {
                 }
                 .frame(width: screen.width/4.4,
                        height: screen.width/7)
-                    .background(Color.cyan.opacity(1))
-                    .cornerRadius(12)
-            
-            VStack{
-                Text("Темперамент")
-                    .font(.custom("AvenirNext-Bold", size: 10))
-                    .foregroundColor(.white)
-                Text(counterViewModel.table.temperament)
-                    .font(.custom("AvenirNext-Bold", size: 16))
-                    .foregroundColor(.white)
-            }
-            .frame(width: screen.width/4.4,
+                .background(Color.cyan.opacity(1))
+                .cornerRadius(12)
+                
+                VStack{
+                    Text("Темперамент")
+                        .font(.custom("AvenirNext-Bold", size: 10))
+                        .foregroundColor(.white)
+                    Text(counterViewModel.table.temperament)
+                        .font(.custom("AvenirNext-Bold", size: 16))
+                        .foregroundColor(.white)
+                }
+                .frame(width: screen.width/4.4,
                        height: screen.width/7)
                 .background(Color.cyan.opacity(1))
                 .cornerRadius(12)
-        }
+            }
             
-
+            
             SimpleRowCompatibility(firstText: "Характер",
-                      secondText: "Здоровье",
-                      thirtText: "Удача",
-                      fourthText: "Цель",
-                      firstContentText: counterViewModel.table.harakter,
-                      secondContentText: counterViewModel.table.zdorovie,
-                      thirtContentText: counterViewModel.table.udacha,
-                      fourthContentText: counterViewModel.table.cell)
+                                   secondText: "Здоровье",
+                                   thirtText: "Удача",
+                                   fourthText: "Цель",
+                                   firstContentText: counterViewModel.table.harakter,
+                                   secondContentText: counterViewModel.table.zdorovie,
+                                   thirtContentText: counterViewModel.table.udacha,
+                                   fourthContentText: counterViewModel.table.cell)
             SimpleRowCompatibility(
-                          firstText: "Энергия",
-                          secondText: "Логика",
-                          thirtText: "Долг",
-                          fourthText: "Семья",
-                          firstContentText: counterViewModel.table.energy,
-                          secondContentText: counterViewModel.table.logic,
-                          thirtContentText: counterViewModel.table.dolg,
-                          fourthContentText: counterViewModel.table.semiya)
+                firstText: "Энергия",
+                secondText: "Логика",
+                thirtText: "Долг",
+                fourthText: "Семья",
+                firstContentText: counterViewModel.table.energy,
+                secondContentText: counterViewModel.table.logic,
+                thirtContentText: counterViewModel.table.dolg,
+                fourthContentText: counterViewModel.table.semiya)
             SimpleRowCompatibility(
-                          firstText: "Интерес",
-                          secondText: "Труд",
-                          thirtText: "Память",
-                          fourthText: "Привычки",
-                          firstContentText: counterViewModel.table.interes,
-                          secondContentText: counterViewModel.table.trud,
-                          thirtContentText: counterViewModel.table.pamyat,
-                          fourthContentText: counterViewModel.table.privichki)
+                firstText: "Интерес",
+                secondText: "Труд",
+                thirtText: "Память",
+                fourthText: "Привычки",
+                firstContentText: counterViewModel.table.interes,
+                secondContentText: counterViewModel.table.trud,
+                thirtContentText: counterViewModel.table.pamyat,
+                fourthContentText: counterViewModel.table.privichki)
             LastRowCompatibility(secondText:"Быт", secondContentText: counterViewModel.table.bit,
-                counterViewModel: counterViewModel)
-                .padding(.bottom, 10)
-//            CalendarCompatibility(counterViewModel: counterViewModel)
-//                .padding(.bottom, 150)
-            
+                                 counterViewModel: counterViewModel,
+                                 storeVM: storeVM)
+            .padding(.bottom, 10)
         }
     }
-        
+    
 }
 
 struct SimpleRowCompatibility: View {
     
-     var firstText = ""
-     var secondText = ""
-     var thirtText = ""
-     var fourthText = ""
+    var firstText = ""
+    var secondText = ""
+    var thirtText = ""
+    var fourthText = ""
     
     var firstContentText = ""
     var secondContentText = ""
@@ -189,6 +194,7 @@ struct LastRowCompatibility: View {
     var secondText = ""
     var secondContentText = ""
     var counterViewModel: CounterViewModel
+    @StateObject var storeVM: StoreVM
     
     var body: some View {
         HStack() {
@@ -218,10 +224,16 @@ struct LastRowCompatibility: View {
             .background(Color.cyan.opacity(0.63))
             .cornerRadius(12)
             
-
-            
             VStack{
-                CalendarCompatibility(counterViewModel: counterViewModel)
+                if (storeVM.purchasedSubscriptions.isEmpty) {
+                    Text("Оформите подписку")
+                        .font(.custom("AvenirNext-Bold", size: 18))
+                        .foregroundColor(.white)
+                    
+                } else {
+                    CalendarCompatibility(counterViewModel: counterViewModel)
+                }
+                
             }
             .frame(width: screen.width/2.1,
                    height: screen.width/7)
@@ -236,9 +248,9 @@ struct CalendarCompatibility: View {
     @State var selectedDate: Date = Date()
     var body: some View {
         VStack{
-//            Text("Введите дату рождения")
-//                .font(.custom("AvenirNext-Bold", size: 24))
-//                .foregroundColor(.white)
+            //            Text("Введите дату рождения")
+            //                .font(.custom("AvenirNext-Bold", size: 24))
+            //                .foregroundColor(.white)
             DatePicker("",
                        selection: Binding(get: {
                 self.selectedDate
@@ -261,10 +273,3 @@ struct CalendarCompatibility: View {
     
 }
 
-
-
-
-#Preview {
-    CompatibilityView(counterOneViewModel: CounterViewModel(),
-    counterTwoViewModel: CounterViewModel())
-}

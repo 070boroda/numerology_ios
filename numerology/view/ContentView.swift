@@ -11,6 +11,9 @@ import YandexMobileAds
 struct ContentView: View {
     
     @StateObject var counterViewModel: CounterViewModel
+    @Environment(\.dismiss) var dismiss
+    @State private var showingSheet = false
+    @StateObject var storeVM: StoreVM
     
     var body: some View {
         VStack(){
@@ -85,8 +88,15 @@ struct ContentView: View {
                           fourthContentText: counterViewModel.table.privichki)
             LastRow(secondText:"Быт", secondContentText: counterViewModel.table.bit)
                 .padding(.bottom, 40)
-            Calendar(counterViewModel: counterViewModel)
+//            Button("Show Sheet") {
+//                       showingSheet.toggle()
+//                   }
+//            .sheet(isPresented: self.$showingSheet) {
+//                SubscriptionView().environmentObject(storeVM)
+//                   }
+            Calendar(counterViewModel: counterViewModel, storeVM: storeVM)
                 .padding(.bottom, 150)
+           
             
         }.frame(
             minWidth: 0,
@@ -235,6 +245,7 @@ struct LastRow: View {
 
 struct Calendar: View {
     var counterViewModel: CounterViewModel
+    @State var storeVM: StoreVM
     @State var selectedDate: Date = Date()
     var body: some View {
         VStack{
@@ -259,7 +270,9 @@ struct Calendar: View {
             .colorMultiply(.white)
             .colorInvert()
             .environment(\.locale, Locale.init(identifier: "ru"))
-            SwiftUIViewController()
+            if (storeVM.purchasedSubscriptions.isEmpty) {
+                SwiftUIViewController()
+            }
         }
     }
 }
