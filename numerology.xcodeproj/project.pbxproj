@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12F632BC5673774656CC6C12 /* Pods_numerology.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40647194937840EF2D7400B4 /* Pods_numerology.framework */; };
 		A837D2932AECD331003312E4 /* numerologyTestsCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837D2922AECD331003312E4 /* numerologyTestsCounter.swift */; };
 		A837D29B2AEE3EE3003312E4 /* CompatibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837D29A2AEE3EE3003312E4 /* CompatibilityView.swift */; };
 		A837D29D2AEEC4B9003312E4 /* TransformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837D29C2AEEC4B9003312E4 /* TransformView.swift */; };
@@ -31,6 +30,7 @@
 		A8FFB5A52AEC3774007C491C /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FFB5A42AEC3773007C491C /* AppView.swift */; };
 		A8FFB5AA2AEC565C007C491C /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FFB5A92AEC565C007C491C /* Table.swift */; };
 		A8FFB5AE2AEC5891007C491C /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FFB5AD2AEC5891007C491C /* CounterViewModel.swift */; };
+		E604D76B32444115B38B0B4E /* Pods_numerology.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE60DCE3FC09A73FD310CD5 /* Pods_numerology.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		40647194937840EF2D7400B4 /* Pods_numerology.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_numerology.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CE60DCE3FC09A73FD310CD5 /* Pods_numerology.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_numerology.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D5F6709EF08F4B08A056117 /* Pods-numerology.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-numerology.release.xcconfig"; path = "Target Support Files/Pods-numerology/Pods-numerology.release.xcconfig"; sourceTree = "<group>"; };
+		84061D749FAB8F8661304C05 /* Pods-numerology.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-numerology.debug.xcconfig"; path = "Target Support Files/Pods-numerology/Pods-numerology.debug.xcconfig"; sourceTree = "<group>"; };
 		A80838F52AF42D8A0052D3FA /* numerology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = numerology.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A80838F62AF42D8A0052D3FA /* numerologyTestsCounter.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = numerologyTestsCounter.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A837D2922AECD331003312E4 /* numerologyTestsCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numerologyTestsCounter.swift; sourceTree = "<group>"; };
@@ -86,8 +88,6 @@
 		A8FFB5A42AEC3773007C491C /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		A8FFB5A92AEC565C007C491C /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 		A8FFB5AD2AEC5891007C491C /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
-		ED62BA6042810E029D9A19A8 /* Pods-numerology.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-numerology.debug.xcconfig"; path = "Target Support Files/Pods-numerology/Pods-numerology.debug.xcconfig"; sourceTree = "<group>"; };
-		FB4A2AAE652B9FD53CE78C55 /* Pods-numerology.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-numerology.release.xcconfig"; path = "Target Support Files/Pods-numerology/Pods-numerology.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12F632BC5673774656CC6C12 /* Pods_numerology.framework in Frameworks */,
+				E604D76B32444115B38B0B4E /* Pods_numerology.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,18 +112,10 @@
 		352EA078E2B1EB164E7E9854 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				ED62BA6042810E029D9A19A8 /* Pods-numerology.debug.xcconfig */,
-				FB4A2AAE652B9FD53CE78C55 /* Pods-numerology.release.xcconfig */,
+				84061D749FAB8F8661304C05 /* Pods-numerology.debug.xcconfig */,
+				7D5F6709EF08F4B08A056117 /* Pods-numerology.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		4E178048CF6DCF1A9A2F8EDA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				40647194937840EF2D7400B4 /* Pods_numerology.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A837D2912AECD331003312E4 /* numerologyTestsCounter */ = {
@@ -178,7 +170,7 @@
 				352EA078E2B1EB164E7E9854 /* Pods */,
 				A80838F52AF42D8A0052D3FA /* numerology.app */,
 				A80838F62AF42D8A0052D3FA /* numerologyTestsCounter.xctest */,
-				4E178048CF6DCF1A9A2F8EDA /* Frameworks */,
+				E99B1181EADB3337D30BEDC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -242,6 +234,14 @@
 			path = viewmodel;
 			sourceTree = "<group>";
 		};
+		E99B1181EADB3337D30BEDC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CE60DCE3FC09A73FD310CD5 /* Pods_numerology.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -267,13 +267,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8D8FE7D2AE99A0300475B20 /* Build configuration list for PBXNativeTarget "numerology" */;
 			buildPhases = (
-				5455F17D4EA644CCCAA852DD /* [CP] Check Pods Manifest.lock */,
+				F119754BBBAA350677A73B75 /* [CP] Check Pods Manifest.lock */,
 				A8D8FE552AE99A0000475B20 /* Sources */,
 				A8D8FE562AE99A0000475B20 /* Frameworks */,
 				A8D8FE572AE99A0000475B20 /* Resources */,
 				A80838F92AF430480052D3FA /* Embed Frameworks */,
-				BBC49A333409BEFA2A9AA364 /* [CP] Embed Pods Frameworks */,
-				7A11D24F151A064F225F001D /* [CP] Copy Pods Resources */,
+				2494ACF12BD18BEA340D47DB /* [CP] Embed Pods Frameworks */,
+				8576F5F2CF7701E3030D0FC1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -344,7 +344,41 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5455F17D4EA644CCCAA852DD /* [CP] Check Pods Manifest.lock */ = {
+		2494ACF12BD18BEA340D47DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-numerology/Pods-numerology-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-numerology/Pods-numerology-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-numerology/Pods-numerology-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8576F5F2CF7701E3030D0FC1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-numerology/Pods-numerology-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-numerology/Pods-numerology-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-numerology/Pods-numerology-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F119754BBBAA350677A73B75 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -364,40 +398,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7A11D24F151A064F225F001D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-numerology/Pods-numerology-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-numerology/Pods-numerology-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-numerology/Pods-numerology-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BBC49A333409BEFA2A9AA364 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-numerology/Pods-numerology-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-numerology/Pods-numerology-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-numerology/Pods-numerology-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -605,7 +605,7 @@
 		};
 		A8D8FE7E2AE99A0300475B20 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED62BA6042810E029D9A19A8 /* Pods-numerology.debug.xcconfig */;
+			baseConfigurationReference = 84061D749FAB8F8661304C05 /* Pods-numerology.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -640,7 +640,7 @@
 		};
 		A8D8FE7F2AE99A0300475B20 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB4A2AAE652B9FD53CE78C55 /* Pods-numerology.release.xcconfig */;
+			baseConfigurationReference = 7D5F6709EF08F4B08A056117 /* Pods-numerology.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
